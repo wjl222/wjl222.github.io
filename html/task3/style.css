@@ -1,68 +1,55 @@
-.big-box1{
-    width: 640px;
-    height:1097px;
-    margin-left:auto;
-    margin-right:auto;
+html{
+    font-size: 62.5%; 
+    height: 1030px;
 }
-.big-box2 {
-    width: 100%;
-    height: 8%;
-    background: #234249;
-    position:relative;
+body{
+    width: auto;
+    height: 1030px;
 }
-
-.big-box3 {
-    width: 100%;
-    height: 92%;
-    background: #4ca5ad;
-    float:top;
-    position:relative;
+.navigation{
+    width: auto;
+    height: 80px;
+    background:  #234249;
+    margin-top: 0;
 }
-
-.box1{
-    position:absolute;
-    left:5.5%;
-    top:28%;
+.page {
+    width: auto;
+    height: 950px;
+    background:  #68cdd5;
+    padding:90px;
 }
-.box2{
-    position:absolute;
-    right:5.5%;
-    top:28%;
+.return-key {
+    display:inline-block;
+    vertical-align:middle;
 }
-.box3{
-    position:absolute;
-    left:5%;
-    top:6%;
+.setting-key{
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
 }
-.box4{
-    position:absolute;
-    right:41px;
-    top:43px;
+.logo{
+    text-align: center;
+    margin-top: 200px;
 }
-.box5{
-    position:absolute;
-    left:36.625%;
-    top:113px;
+.icon-left{
+    float: lift; width:80%;
+    margin-top: 70%;
+    display: inline-block;
 }
-.box6{
-    position:absolute;
-    right:21.7%;
-    top:645px;
+.icon-right{
+    float: right; width:20%;
+    margin-top: 70%;
+    display: inline-block;
 }
-.box7{
-    position:absolute;
-    left:21.7%;
-    top:645px;
+.icon-man{
+    float: right; width: 45px;
+    margin-top:15%;
+    display:inline;
 }
-.big-box3 .prg{
-    margin-top: 30%;
-    line-height: 50px;
-}
-.g{
-    width: 50%;
-    margin-top: 309px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 2em;
+.text{
+    text-align: center;
+    word-break: break-all;
     color: white;
+    font-size: 1rem;
+    margin: 50px;
 }
