@@ -1,61 +1,94 @@
-html{
-    height: 620px;
-    font-size:62.5%;
-}
-*{
-    margin :0;
-    padding: 0;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 45px;
-    width: auto;
-    font-size: 1.8rem ;color:white;
-    background: #5fc0cd;
-}
-form{
-    height: 142px;
-    width: 100%;
-    padding-top: 8px;
-    background: #eff0f4;
-}
-input{
-    margin-left: 23px;
-    border: 0px;
-}
-input::-webkit-input-placeholder{
-    color:rgb(172, 172, 172);
+html {
+    font-size: 62.5%;
 }
 
-img{
-    padding:3px 23px;
-    border-right: 2px solid #eceaea;
+* {
+    margin: 0;
+    padding: 0;
 }
-.login-box,.pass{
+
+nav {
+    height: 45px;
+    width: auto;
+    background: #5fc0cd;
+}
+
+.close-text,
+.login-text {
+    display: inline-block;
+    height: 45px;
+    width: 16.3%;
+    font-size: 1.6rem;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+}
+
+.register-text {
+    display: inline-block;
+    height: 45px;
+    width: 66%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+form {
+    height: 133.4px;
+    width: 100%;
+    padding-top: 16.6px;
+    background: #eff0f4;
+}
+
+input {
+    border: none;
+    margin-left: 23px;
+    outline: medium;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(172, 172, 172);
+}
+
+img {
+    padding: 3px 22px;
+    border-right: 1px solid #eaedee;
+}
+
+.login-box,
+.pass-box {
     display: flex;
     align-items: center;
     height: 50px;
     background-color: white;
 }
-.pass{
-    margin-top: 8px;
+
+.pass-box {
+    margin-top: 16.6px;
 }
-.footer{
+
+.footer {
     height: 425px;
     background: #eff0f4;
 }
-.login{
+
+.login {
     display: flex;
-    justify-content: center;
+    height: 100px;
+    background: #5fc0cd;
     align-items: center;
-    font-size: 1.8rem;color:  white;
-    background-color: #5fc0cd
+    font-size: 1.8rem;
+    color: white;
+    justify-content: center;
+
+
 }
-.forget-password{
+
+.forget-password {
     float: right;
     margin-right: 15px;
     margin-top: 7px;
-    font-size: 1.6rem ;color: #5fc0cd;
+    font-size: 1.6rem;
+    color: #5fc0cd;
 }
