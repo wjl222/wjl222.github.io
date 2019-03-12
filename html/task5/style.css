@@ -1,0 +1,23 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    height: 43px;
+    width: 100%;
+    background: #5fc0cd;
+}
+
+.title{
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+
+}
