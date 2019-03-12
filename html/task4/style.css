@@ -9,9 +9,10 @@ html {
 }
 
 nav {
-    position: relative;
+
+    position: fixed;
     height: 45px;
-    width: auto;
+    width: 100%;
     text-align: center;
     background: #5fc0cd;
 }
