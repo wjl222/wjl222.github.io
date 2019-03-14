@@ -1,23 +1,200 @@
 html{
+    height: 100%;
     font-size: 62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     position: fixed;
+    top: 0;
     height: 43px;
     width: 100%;
     background: #5fc0cd;
 }
 
-.title{
-    display: inline-block;
-    height: 43px;
-    line-height: 43px;
+.title {
+    position: absolute;
     text-align: center;
+    width: 100%;
+    line-height: 43px;
+    font-size: 1.8rem;
+    color: #fff;
+}
 
+.return-key {
+    float: left;
+    height: 43px;
+    margin-left: 17.5px;
+    padding-top: 12.75px;
+}
+
+.return-key img {
+    width: 10px;
+}
+
+.photo {
+    width: 100%;
+    height: 164px;
+    margin-top: 43px;
+    background-image: url(https://t1.picb.cc/uploads/2019/03/14/VQYsTX.png);
+    background-size: cover;
+}
+
+.photo .personal-information-background {
+    top: 50%;
+    margin-top: 42.25px;
+    margin-left: 15px;
+    height: 84.5px;
+}
+
+.personal-information {
+    position: absolute;
+    left: 120px;
+    height: 164px;
+
+}
+
+.personal-information img {
+    width: 9px;
+}
+
+.name-age {
+    margin-top: 58px;
+    margin-bottom: 12px;
+}
+
+.name {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.age {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.address {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.main {
+    height: 416.5px;
+    background-color: #fff;
+}
+
+.main .main-grid-2 .img-1 {
+    width: 12px;
+    padding-left: 30px;
+}
+
+.main .main-grid-2 .img-2 {
+    width: 12px;
+}
+
+.main-grid-1,
+.main-grid-2,
+.main-grid-3,
+.main-grid-4,
+.main-grid-5,
+.main-grid-6 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 1.6rem;
+}
+
+.main-grid-5 .table-content span {
+    color: #e26163;
+}
+
+.porfessional-skill {
+    margin-left: 15px;
+    padding-left: 14px;
+    border-left: 1.5px solid #5fc0cd;
+    font-size: 1.6rem;
+}
+
+.main-grid-2 {
+    display: flex;
+    align-items: center;
+    line-height: 2px;
+}
+
+.live-home {
+    border-right: 0.5px solid #e1e5e7;
+    padding-right: 11px;
+    padding-left: 10px;
+}
+
+.excluding-meals {
+    padding-left: 10px;
+}
+
+.table-subject,
+.table-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-subject {
+    width: 96px;
+    padding-left: 31px;
+    color: #999;
+    border-right: 1px solid #e1e5e7;
+    white-space: nowrap;
+}
+
+.table-content {
+    width: 400px;
+    padding-left: 13.5px;
+    padding-right: 15px;
+    word-wrap: break-word;
+}
+
+hr {
+    margin: auto;
+    border: .5px solid #e1e5e7;
+}
+
+.main-table-line {
+    width: 97%;
+}
+
+.blank{
+    height:112.5px;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    top: 563px;
+    height: 45px;
+    width: 100%;
+}
+
+.message,
+.phone-connection {
+    display: inline-block;
+    width: 45%;
+    height: 37px;
+    border-radius: .3rem;
+    border: 1px solid #5fc0cd;
+    margin: 4px;
+    line-height: 45px;
+    font-size: 1.7rem;
+}
+
+.message {
+    color: #5fc0cd
+}
+
+.phone-connection {
+    background-color: #5fc0cd;
+    color: white;
 }
