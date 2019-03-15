@@ -173,9 +173,10 @@ hr {
 .footer {
     position: fixed;
     text-align: center;
-    top: 563px;
+    bottom: 0;
     height: 45px;
     width: 100%;
+    background: #fff;
 }
 
 .message,
