@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*头部菜单栏*/
+nav {
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+    background: #5fc0cd;
+}
+
+.looking-for-employer {
+    display: inline-block;
+    height: 35px;
+    width: 142.5px;
+    margin-top: 5px;
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 3.5px;
+    background-color: #55a8b3;
+}
+
+.looking-for-a-care-text {
+    display: inline-block;
+    color: #55a8b3;
+}
+
+.looking-for-a-care-text {
+    float: right;
+    width: 72px;
+    border-radius: 3.5px;
+    background: #fff;
+}
+
+.location {
+    display: table-cell;
+    float: right;
+    height: 44px;
+    font-size: 0;
+    line-height: 44px;
+}
+
+.location img {
+    margin-right: 15px;
+    width: 21px;
+    vertical-align: middle;
+}
+
+.main {
+    padding-top: 44px;
+}
+/*表格标题*/
+.table-subject {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-subject img {
+    width: 6.5px;
+    height: 4px;
+    margin-left: 30px;
+}
+
+.location-text,
+.room-and-board,
+.the-patient-condition {
+    display: flex;
+    height: 40px;
+    width: 33.3%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #999;
+}
+/*表格内容*/
+.table-content {
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.service-date {
+    width: 75px;
+    color: #999;
+}
+
+.service-date img {
+    height: 12px;
+    margin-right: 7px;
+}
+
+.date {
+    margin: 13px 34px;
+}
+
+.price {
+    float: right;
+    color: #e63b0e;
+}
+
+.price img {
+    height: 16.5px;
+    padding-left: 10px;
+
+}
+
+.address {
+    width: 110px;
+    color: #999;
+
+}
+
+.address img {
+    height: 12px;
+    margin-right: 7px;
+}
+
+.service-date,
+.price,
+.address {
+    display: flex;
+    align-items: center;
+}
+
+.service-date,
+.address {
+    margin-left: 15px;
+
+}
+
+hr {
+    height: 1px;
+    background-color: #e1e5e7;
+    border: 0px transparent;
+}
+/*底部*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #f8fafb;
+
+}
+
+.home-page img {
+    width: 23px;
+    height: 20px;
+    margin-bottom: 1px;
+}
+
+.write img {
+    width: 47px;
+    height: 47px;
+}
+
+.my img {
+    width: 23px;
+    height: 20px;
+    margin-bottom: 1px;
+}
+
+
+.my {
+    margin: 6px auto 5px 85px;
+    height: 100%;
+    color: #999;
+}
+
+.home-page {
+    margin: 6px 85px 5px auto;
+    height: 100%;
+    color: #55a8b3;
+}
+
+.write {
+    margin: auto;
+    height: 100%;
+}
