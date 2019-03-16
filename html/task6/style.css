@@ -54,10 +54,12 @@ nav {
     vertical-align: middle;
 }
 
+/*表格标题*/
 .main {
     padding-top: 44px;
+    overflow: auto;
 }
-/*表格标题*/
+
 .table-subject {
     display: flex;
     justify-content: space-between;
