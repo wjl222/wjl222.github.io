@@ -15,23 +15,25 @@
             <span class="looking-for-employer-text">找雇主</span>
             <div class="looking-for-a-care-text">找护工</div>
         </div>
-        <div class="location"><img src="https://t1.picb.cc/uploads/2019/03/16/Va3kyN.png" alt="Va3kyN.png" border="0" /></div>
+        <div class="location"><button type="button"><img src="https://t1.picb.cc/uploads/2019/03/16/Va3kyN.png" alt="Va3kyN.png" border="0" /></button></div>
     </nav>
     <div class="main">
-        <div class="table-subject">
-            <div class="location-text">
-                所在地
-                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3tme.png" alt="Va3tme.png" border="0" />
-            </div>
-            <div class="room-and-board">
-                食宿
-                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3tme.png" alt="Va3tme.png" border="0" />
-            </div>
-            <div class="the-patient-condition">
-                病人情况
-                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3tme.png" alt="Va3tme.png" border="0" />
-            </div>
-        </div>
+            <select>
+                <option value="" disabled selected hidden>所在地</option>
+                <option value="yancheng">盐城</option>
+                <option value="zhengzhou">郑州</option>
+                <option value="beijing">北京</option>
+            </select><!--
+            --><select>
+                <option value=""disabled selected hidden>食宿</option>
+                <option value="have dinner">包吃</option>
+                <option value="live">包住</option>
+            </select><!--
+            --><select>
+                <option value="" disable selected hidden>病人情况</option>
+                <option value="good">好</option>
+                <option value="bad">坏</option>
+            </select>
         <hr />
         <div class="table-content">
             <div class="service-date">
@@ -39,16 +41,18 @@
                 服务日期
             </div>
             <div class="date">
-                2015-7-5至2015-7-12
-                <div class="price">
-                    25元/小时
-                    <img src="https://t1.picb.cc/uploads/2019/03/16/Va3ZQs.png" alt="Va3ZQs.png" border="0" />
-                </div>
+               2015-7-5至2015-7-12
+
             </div>
+            <div class="price">
+                <div>25元/小时</div>
+                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3ZQs.png" alt="Va3ZQs.png" border="0" />
+            </div>
+
 
             <div class="address">
                 <img src="https://t1.picb.cc/uploads/2019/03/16/Va3VSK.png" alt="Va3VSK.png" border="0" />
-                北京.通州.果园
+               北京.通州.果园 
             </div>
         </div>
         <hr />
@@ -128,17 +132,37 @@
             </div>
         </div>
         <hr />
-
-        <div class="footer">
-            <div class="home-page"><img src="https://t1.picb.cc/uploads/2019/03/16/Va3IqT.png" alt="Va3IqT.png" border="0" />
-                <p>首页</p>
+        <div class="table-content">
+            <div class="service-date">
+                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3wD7.png" alt="Va3wD7.png" border="0" />
+                服务日期
             </div>
-            <div class="write"><img src="https://t1.picb.cc/uploads/2019/03/16/Va3iTM.png" alt="Va3iTM.png" border="0" /></div>
-            <div class="my"><img src="https://t1.picb.cc/uploads/2019/03/16/Va36n6.png" alt="Va36n6.png" border="0" />
-                <p>我的</p>
+            <div class="date">
+                2015-7-5至2015-7-12
+                <div class="price">
+                    45元/小时
+                    <img src="https://t1.picb.cc/uploads/2019/03/16/Va3ZQs.png" alt="Va3ZQs.png" border="0" />
+                </div>
+            </div>
+
+            <div class="address">
+                <img src="https://t1.picb.cc/uploads/2019/03/16/Va3VSK.png" alt="Va3VSK.png" border="0" />
+                北京.通州.果园
             </div>
         </div>
-
+    </div>
+    <div class="footer">
+        <button type="button" class="home-page">
+            <img src="https://t1.picb.cc/uploads/2019/03/16/Va3IqT.png" alt="Va3IqT.png" border="0" />
+            <p>首页</p>
+        </button>
+        <button type="button" value="write" class="write">
+            <img src="https://t1.picb.cc/uploads/2019/03/16/Va3iTM.png" alt="Va3iTM.png" border="0" />
+        </button>
+        <button type="button" class="my">
+            <img src="https://t1.picb.cc/uploads/2019/03/16/Va36n6.png" alt="Va36n6.png" border="0" />
+            <p>我的</p>
+        </button>
     </div>
 </body>
 

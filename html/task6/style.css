@@ -9,18 +9,23 @@ html {
 }
 /*头部菜单栏*/
 nav {
+    z-index: 2;
     position: fixed;
     height: 44px;
     width: 100%;
+    line-height: 44px;
     text-align: center;
     background: #5fc0cd;
 }
 
 .looking-for-employer {
-    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -17.5px;
+    margin-left: -71.25px;
     height: 35px;
     width: 142.5px;
-    margin-top: 5px;
     font-size: 1.7rem;
     color: #fff;
     line-height: 35px;
@@ -29,6 +34,7 @@ nav {
 }
 
 .looking-for-a-care-text {
+    height: 35px;
     display: inline-block;
     color: #55a8b3;
 }
@@ -41,17 +47,22 @@ nav {
 }
 
 .location {
-    display: table-cell;
     float: right;
-    height: 44px;
     font-size: 0;
     line-height: 44px;
+
+}
+
+.location button{
+    margin-right: 15px;
+    background: #5fc0cd;
+    border: 0;
 }
 
 .location img {
-    margin-right: 15px;
     width: 21px;
     vertical-align: middle;
+
 }
 
 /*表格标题*/
@@ -60,31 +71,19 @@ nav {
     overflow: auto;
 }
 
-.table-subject {
-    display: flex;
-    justify-content: space-between;
-}
-
-.table-subject img {
-    width: 6.5px;
-    height: 4px;
-    margin-left: 30px;
-}
-
-.location-text,
-.room-and-board,
-.the-patient-condition {
-    display: flex;
-    height: 40px;
+.main select {
     width: 33.3%;
-    align-items: center;
-    justify-content: center;
+    height: 40px;
+    text-align-last: center;
     font-size: 1.4rem;
     color: #999;
+    border: 0;
+    outline: 0;
 }
 /*表格内容*/
 .table-content {
-    height: 80px;
+    position: relative;
+    height: 90px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 1.4rem;
@@ -101,15 +100,28 @@ nav {
 }
 
 .date {
-    margin: 13px 34px;
+    width: auto;
+    margin: 16.5px 84px 16.5px 34px;
+    font-size: 1.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
+
 .price {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 120px;
+    line-height: 120px;
+    white-space: nowrap;
     color: #e63b0e;
 }
 
 .price img {
+    float: right;
     height: 16.5px;
     padding-left: 10px;
 
@@ -136,7 +148,6 @@ nav {
 .service-date,
 .address {
     margin-left: 15px;
-
 }
 
 hr {
@@ -152,15 +163,13 @@ hr {
     justify-content: space-between;
     height: 50px;
     width: 100%;
-    font-size: 1rem;
     background-color: #f8fafb;
 
 }
 
 .home-page img {
     width: 23px;
-    height: 20px;
-    margin-bottom: 1px;
+    padding-top: 6px;
 }
 
 .write img {
@@ -169,25 +178,23 @@ hr {
 }
 
 .my img {
-    width: 23px;
-    height: 20px;
-    margin-bottom: 1px;
+    height: 22.5px;
+    vertical-align: middle;
 }
 
-
 .my {
-    margin: 6px auto 5px 85px;
-    height: 100%;
+    margin-right: 83px;
     color: #999;
 }
 
 .home-page {
-    margin: 6px 85px 5px auto;
-    height: 100%;
+    margin-left: 83px;
     color: #55a8b3;
 }
 
-.write {
-    margin: auto;
-    height: 100%;
+.footer button{
+    height: 50px;
+    border: 0;
+    font-size: 1rem;
+    background-color: #f8fafb;
 }
