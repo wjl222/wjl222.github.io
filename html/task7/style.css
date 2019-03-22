@@ -1,0 +1,166 @@
+html{
+    font-size:62.5%;
+    display: table;
+}
+
+body{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height:100%;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 30px;
+    width: 100%;
+    padding-top: 17px;
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+.more-option{
+    float: left;
+    width: 19.5px;
+    margin-left: 11.5px;
+}
+
+.return-key{
+    float: right;
+    width: 18px;
+    margin-right: 11.5px;
+}
+
+.vote-and-audio{
+    position: fixed;
+    top: 47px;
+    z-index: 2;
+    height: 41px;
+    width: 100%;
+    font-size: 13px;
+    color: #464646;
+    line-height: 41px;
+    background-color: #b9e9f5;
+}
+
+.vote-and-audio span{
+    display: inline-block;
+    padding-left: 24px;
+}
+
+.audio{
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+}
+
+.icon-triangle img{
+    position: absolute;
+    top: 88px;
+    width: 7.5px;
+    margin-left: 35px;
+    opacity: 0.7;
+}
+
+.main{
+    padding-top: 88px;
+    overflow: scroll;
+    background-color: #29bde0;
+}
+
+.click-max-people{
+    height: 25px;
+    padding-top: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.click-max-people span{
+    display: inline-block;
+    padding-left: 36px;
+
+}
+
+.one-line{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.option{
+    width: 68px;
+    height: 93.5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.option:hover .option-image{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-text{
+    width: 63px;
+    height: 63px;
+    margin-bottom: 9.25px;
+    border: 2.5px solid #fff;
+}
+
+.option-image{
+    display: none;
+}
+
+.option img{
+    width: 15px;
+    height: 15px;
+}
+
+.option-identity{
+    height: 47.5px;
+    font-size: 1.5rem;
+    line-height: 47.5px;
+    text-align: center;
+    background-color: #f5c97b;
+}
+
+.option-text .option-number{
+    height: 15.5px;
+    font-size: 2px;
+    color: #fff;
+    line-height: 15.5px;
+    text-align: center;
+    background-color: #83b09a;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 94px;
+    width: 100%;
+    background-color: #29bde0;
+}
+
+.vote-die{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -116.5px;
+    width: 233px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #fbb435;
+}
