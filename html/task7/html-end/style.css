@@ -1,0 +1,179 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    height: 7.54545454545454vh;
+    width: 100%;
+    font-size: 3.09090909090909vh;
+    color: #fff;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+nav .homepage{
+    float: left;
+    margin-left: 10px;
+    padding-top: 2.545454545454545vh;
+    height: 3.81818181818182vh;
+}
+
+nav .hint{
+    float: right;
+    padding-right: 10px;
+    padding-top: 2.545454545454545vh;
+    height: 3.81818181818182vh;
+}
+
+nav span{
+    display: inline-block;
+    padding-top: 2.545454545454545vh;
+}
+
+/*下面是内容部分*/
+
+.main{
+    width: 100%;
+    padding: 7.54545454545454vh 0 11.81818181818181vh 0 ;
+    background-color: #fff;
+}
+
+.icon-and-result-text{
+    width: 100%;
+    height: 65vh;
+    background-color: #29bde0;
+}
+
+.icon{
+    text-align: center;
+    width: 100%;
+}
+
+.icon img{
+    height: 177.5px;
+}
+
+.result-text{
+    display: flex;
+    justify-content: center;
+    height: 16.12vh;
+    font-size: 3.02vh;
+    color: #ffc865; 
+}
+
+.result-text span{
+    width: 74%;
+    margin-top: 1.82vh;
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    margin-top: 5.27vh;
+
+}
+
+.details-text{
+    width: 78vw;
+    height: 18.2vh;
+    font-size: 2.4vh;
+    color: #fff;
+    text-align: left;
+
+}
+
+.details span{
+    width: 30%;
+    margin-right: 2%;
+}
+
+.details div{
+    margin: 3.2px auto;
+}
+
+/*下面是回合详情*/
+
+.day{
+    position: relative;
+    top: 50%;
+
+    transform: translate(0,-50%);
+}
+
+.rounds-details{
+    width: 100%;
+    height: 15.36vh;
+    font-size: 2.4vh;
+    border-top: .5px solid #ddd;
+    border-bottom: .5px solid #ddd;
+}
+
+.rounds-details .rounds{
+    display: inline-block;
+    margin: 3.2px 0;
+    padding-left: 10.94vw;
+}
+
+.rounds-details .event{
+    height: 8.2vh;
+    padding-left: 10.94vw;
+    margin: 2vw 0;
+    color: #a6a6a6;
+    
+}
+
+/*底部*/
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 11.81818181818181vh;
+    width: 100%;
+    background-color: rgba(41, 189, 224, .7);
+}
+
+.play-again{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #f66f6f;
+}
+
+.uploading-and-sharing,
+.play-again{
+    display: inline-block;
+    width: 42.5vw;
+    height: 7.72727272727273vh;
+    font-size: 20px;
+    line-height:  7.72727272727273vh;
+    text-align: center;
+    border-radius: 1vh;
+    color: #fff;
+}
+
+.uploading-and-sharing{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #fbb435;
+}
+
+@media screen and (max-device-width:400px){
+    .rounds-details{
+        font-size: 4.0625vw;
+    }
+}
