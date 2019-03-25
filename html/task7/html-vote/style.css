@@ -1,104 +1,101 @@
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 html,
-body{
-    height:100%;
+body {
+    height: 100%;
     width: 100%;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     z-index: 2;
-    height: 7.27272727272727vh;
+    height: 4.909090909090909090vh;
     width: 100%;
-    padding-top: 19px;
+    padding-top: 3.09090909090909vh;
     font-size: 3.09090909090909vh;
     color: #fff;
     text-align: center;
     background-color: #29bde0;
 }
 
-.more-option{
+.more-option {
     float: left;
     height: 3.27272727272727vh;
     margin-left: 1.79vw;
 }
 
-.return-key{
+.return-key {
     float: right;
     height: 3.27272727272727vh;
     margin-right: 1.79vw;
 }
 
-.vote-and-audio{
-    position: fixed;
-    top: 7.27272727272727vh;
-    z-index: 2;
+.vote-and-audio {
+    position: relative;
     height: 7.63636363636364vh;
     width: 100%;
     font-size: 2.36363636363636vh;
     color: #464646;
     line-height: 7.63636363636364vh;
-    background-color: #b9e9f5;
+    background: rgba(255, 255, 255, .8);
 }
 
-.vote-and-audio span{
+.vote-and-audio span {
     display: inline-block;
     padding-left: 3.74vw;
 }
 
-.audio-button{
+.audio-button {
     display: inline-block;
     position: absolute;
     top: 50%;
     right: 1.4vw;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     line-height: 0;
 
 }
 
-.audio-button img{
+.audio-button img {
     width: 4.72727272727272vh;
     height: 4.727272727272727vh;
 }
 
-.audio-button:hover audio{
+.audio-button:hover audio {
     display: inline;
 }
 
-.audio-button audio{
+.audio-button audio {
     position: absolute;
     display: none;
-    z-index: 2;
-    right:1.4vw;
+    right: 1.4vw;
     width: 50vw;
 }
 
-.icon-triangle img{
+.icon-triangle img {
     position: absolute;
-    z-index: 2;
     width: 11px;
     margin-left: 35px;
-    opacity: 0.7;
+    opacity: .8;
+
 }
 
-.main{
-    padding-bottom: 14.64vw;
+.main {
+    padding-bottom: 17.45454545454545vh;
     height: 100%;
-    padding-top: 14.90909090909090vh;
+    padding-top: 8vh;
     overflow: auto;
     background-color: #29bde0;
 }
 
-.click-max-people{
+.click-max-people {
     height: 6.18181818181818vh;
     margin-top: 12px;
     line-height: 6.18181818181818vh;
@@ -106,47 +103,47 @@ nav{
     color: #fff;
 }
 
-.click-max-people span{
+.click-max-people span {
     display: inline-block;
     margin-top: 4.2px;
     padding-left: 5.6vw;
 
 }
 
-.one-line{
+.one-line {
     display: flex;
     justify-content: space-around;
     align-content: space-between;
 }
 
-.option{
+.option {
     margin-top: 21px;
 }
 
-.option:hover .option-image{
+.option:hover .option-image {
     opacity: 100;
 }
 
-.option-text{
+.option-text {
     width: 11.45454545454545vh;
     margin: auto;
-    box-sizing:border-box;
+    box-sizing: border-box;
     border: .45454545454545vh solid #fff;
 }
 
-.option-image{
+.option-image {
     display: flex;
     justify-content: space-between;
     padding-top: 21px;
     opacity: 0;
 }
 
-.option img{
+.option img {
     width: 2.72727272727273vh;
     height: 2.72727272727273vh;
 }
 
-.option-identity{
+.option-identity {
     height: 9.09090909090909vh;
     font-size: 2.72727272727273vh;
     line-height: 9.09090909090909vh;
@@ -154,7 +151,7 @@ nav{
     background-color: #f5c97b;
 }
 
-.option-text .option-number{
+.option-text .option-number {
     height: 2.45454545454545vh;
     font-size: 2.06909090909091vh;
     color: #fff;
@@ -163,7 +160,7 @@ nav{
     background-color: #83b09a;
 }
 
-.footer{
+.footer {
     position: fixed;
     bottom: 0;
     height: 17.45454545454545vh;
@@ -171,16 +168,16 @@ nav{
     background-color: #29bde0;
 }
 
-.vote-die{
+.vote-die {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 76.5625vw;
     height: 8vh;
     font-size: 3.63636363636364vh;
     color: #fff;
     text-align: center;
-    line-height:  8vh;
+    line-height: 8vh;
     background-color: #fbb435;
 }
