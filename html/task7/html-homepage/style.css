@@ -47,10 +47,8 @@ nav img {
 }
 
 .last-game {
-    position: absolute;
-    top: 10.64vh;
-    left: 50%;
-    margin-left: -44.53%;
+    position: relative;
+    margin: 6.64vh auto 0 auto;
     text-align: center;
     line-height: 10.55vh;
     width: 89.06%;
@@ -67,20 +65,17 @@ nav img {
 
 .last-game .return img {
     height: 3.64vh;
+
 }
 
-.return {
+.return{
     position: absolute;
-    top: 50%;
     right: 2.19%;
-    transform: translate(0, -50%);
+    height: 10.55vh;
 }
 
 .edition {
-    position: relative;
-    top: 18.55vh;
-    left: 50%;
-    margin-left: -44.53%;
+    margin: 3vh auto 0 auto;
     height: 70.55vh;
     width: 89.06%;
     border: 1px solid #cdcdcd;
