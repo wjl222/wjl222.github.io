@@ -7,20 +7,38 @@ body {
     padding: 0;
 }
 
+p{
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+nav,
+.main,
+.footer{
+    min-width: 320px;
+}
+
+
 html,
 body {
     height: 100%;
     width: 100%;
 }
-
+/*头部*/
 nav {
     position: fixed;
     top: 0;
     z-index: 2;
-    height: 4.909090909090909090vh;
+    height: 4.91vh;
     width: 100%;
-    padding-top: 3.09090909090909vh;
-    font-size: 3.09090909090909vh;
+    padding-top: 3.09vh;
+    font-size: 3.09vh;
     color: #fff;
     text-align: center;
     background-color: #29bde0;
@@ -28,27 +46,27 @@ nav {
 
 .more-option {
     float: left;
-    height: 3.27272727272727vh;
-    margin-left: 1.79vw;
+    height: 3.27vh;
+    margin-left: 1.79%;
 }
 
 .return-key {
     float: right;
-    height: 3.27272727272727vh;
-    margin-right: 1.79vw;
+    height: 3.27vh;
+    margin-right: 1.79%;
 }
 
 .vote-and-audio {
     position: relative;
-    height: 7.63636363636364vh;
+    height: 7.64vh;
     width: 100%;
-    font-size: 2.36363636363636vh;
+    font-size: 2.36vh;
     color: #464646;
-    line-height: 7.63636363636364vh;
+    line-height: 7.64vh;
     background: rgba(255, 255, 255, .8);
 }
 
-.vote-and-audio span {
+.vote-and-audio p {
     display: inline-block;
     padding-left: 3.74vw;
 }
@@ -57,15 +75,15 @@ nav {
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 1.4vw;
+    right: 1.4%;
     transform: translate(0, -50%);
     line-height: 0;
 
 }
 
 .audio-button img {
-    width: 4.72727272727272vh;
-    height: 4.727272727272727vh;
+    width: 4.73vh;
+    height: 4.73vh;
 }
 
 .audio-button:hover audio {
@@ -87,8 +105,10 @@ nav {
 
 }
 
+/*内容*/
+
 .main {
-    padding-bottom: 17.45454545454545vh;
+    padding-bottom: 17.45vh;
     height: 100%;
     padding-top: 8vh;
     overflow: auto;
@@ -96,16 +116,16 @@ nav {
 }
 
 .click-max-people {
-    height: 6.18181818181818vh;
-    margin-top: 12px;
-    line-height: 6.18181818181818vh;
-    font-size: 2.18181818181818vh;
+    height: 6.18vh;
+    margin-top: 1.09vh;
+    line-height: 6.18vh;
+    font-size: 2.18vh;
     color: #fff;
 }
 
-.click-max-people span {
+.click-max-people p {
     display: inline-block;
-    margin-top: 4.2px;
+    margin-top: .382vh;
     padding-left: 5.6vw;
 
 }
@@ -125,37 +145,39 @@ nav {
 }
 
 .option-text {
-    width: 11.45454545454545vh;
+    width: 11.45vh;
     margin: auto;
     box-sizing: border-box;
-    border: .45454545454545vh solid #fff;
+    border: .45vh solid #fff;
 }
 
 .option-image {
     display: flex;
     justify-content: space-between;
-    padding-top: 21px;
+    padding-top: 1.91vh;
     opacity: 0;
 }
 
 .option img {
-    width: 2.72727272727273vh;
-    height: 2.72727272727273vh;
+    width: 2.73vh;
+    height: 2.73vh;
 }
 
 .option-identity {
-    height: 9.09090909090909vh;
-    font-size: 2.72727272727273vh;
-    line-height: 9.09090909090909vh;
+    display: inline-block;
+    width: 100%;
+    height: 9.09vh;
+    font-size: 2.73vh;
+    line-height: 9.09vh;
     text-align: center;
     background-color: #f5c97b;
 }
 
 .option-text .option-number {
-    height: 2.45454545454545vh;
-    font-size: 2.06909090909091vh;
+    height: 2.45vh;
+    font-size: 2.07vh;
     color: #fff;
-    line-height: 2.45454545454545vh;
+    line-height: 2.45vh;
     text-align: center;
     background-color: #83b09a;
 }
@@ -163,7 +185,7 @@ nav {
 .footer {
     position: fixed;
     bottom: 0;
-    height: 17.45454545454545vh;
+    height: 17.45vh;
     width: 100%;
     background-color: #29bde0;
 }
@@ -173,9 +195,9 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 76.5625vw;
+    width: 76.56%;
     height: 8vh;
-    font-size: 3.63636363636364vh;
+    font-size: 3.64vh;
     color: #fff;
     text-align: center;
     line-height: 8vh;
