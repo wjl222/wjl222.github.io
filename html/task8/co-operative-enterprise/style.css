@@ -178,11 +178,11 @@ p {
     width: 68px;
     height: 100%;
     margin: auto;
-    list-style-image: url(http://wjl222.github.io/html/task8/co-operative-enterprise/images/战略合作企业_02s_05.png)
+    list-style-image: url(./images/战略合作企业_02s_05.png)
 }
 
 .enteprise-link ul li:nth-child(3) {
-    list-style-image: url(http://wjl222.github.io/html/task8/co-operative-enterprise/images/战略合作企业_02s_08.png);
+    list-style-image: url(./images/战略合作企业_02s_08.png);
 }
 
 .enteprise-link ul li:nth-child(3) a {
