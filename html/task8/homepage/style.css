@@ -1,0 +1,519 @@
+html {
+    width: 100%;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*联系方式*/
+
+.contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    color: #29b078;
+    background-color: #fff;
+}
+
+.contact-information p {
+    margin-left: 16.7%;
+}
+
+.contact-information div {
+    display: flex;
+    justify-content: space-between;
+    width: 107px;
+    margin-right: 16.7%;
+}
+
+/*头部选项*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #29b078;
+}
+
+.header button:nth-child(4) {
+    border-bottom: 4px solid #fff;
+}
+
+.header button:hover {
+    border-bottom: 4px solid #fff;
+}
+
+.header div {
+    height: 100%;
+    margin-right: 16%;
+}
+
+.header button {
+    float: right;
+    height: 100%;
+    width: 100px;
+    font-size: 1.6rem;
+    color: white;
+    border-bottom: 4px solid transparent;
+}
+.title-picture {
+    position: relative;
+    height: 31.25vw;
+    font-size: 2.83vw;
+    font-family: "造字工房朗倩（非商用）", "Microsoft YaHei", sans-serif;
+    color: #fff;
+}
+
+.rotation-picture-line {
+    width: 1920px;
+    height: 31.25vw;
+}
+
+.rotation-picture {
+    display: inline-block;
+    width: 7680px;
+    overflow: hidden;
+    animation: rotation 20s infinite;
+}
+
+.rotation-picture img {
+    height: 31.25vw;
+    width: 100vw;
+}
+
+.title-picture button img {
+    height: 23px;
+    opacity: .28;
+}
+
+.title-picture button img:hover{
+    opacity: 1;
+}
+
+.title-picture .left {
+    position: absolute;
+    top: 50%;
+    left: 15.3%;
+    transform: translate(0, -50%);
+}
+
+.title-picture .right {
+    position: absolute;
+    top: 50%;
+    right: 15.3%;
+    transform: translate(0, -50%);
+}
+
+.swith {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.swith img {
+    height: 2.67%;
+}
+
+/*内容*/
+
+.content {
+    background: #fafafa;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    height: 248px;
+    padding-top: 161px;
+    text-align: center;
+}
+
+.home-tag-icon {
+    width: 222px;
+    padding-right: 39px;
+    padding-left: 39px;
+}
+
+.home-tag-icon div {
+    width: 100%;
+}
+
+.highly-active-img {
+    height: 63px;
+}
+
+.specification-img {
+    height: 48px;
+    padding-top: 15px;
+}
+
+.connection-img {
+    height: 55px;
+    padding-top: 8px;
+}
+
+.home-tag-icon p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    color: #a4a4a4;
+}
+
+.home-tag-icon .name {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.person-number {
+    display: flex;
+    align-content: center;
+    flex-flow: wrap;
+    height: 206px;
+    width: 300px;
+    text-align: left;
+}
+
+.person-number div {
+    height: 64px;
+    width: 300px;
+    margin-left: 54px;
+    line-height: 34px;
+}
+
+.person-number img {
+    height: 13px;
+    width: 13px;
+}
+
+.person-number span {
+    font-size: 1.8rem;
+    color: #26a26f;
+}
+
+.person-number p {
+    font-size: 1.8rem;
+    color: #afafaf;
+}
+
+/* 如何学习*/
+.content-title-text {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 115px;
+}
+
+.how-to-learn {
+    height: 335px;
+    width: 100%;
+}
+
+.how-to-learn .line {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.how-to-learn .line .step {
+    position: relative;
+    width: 300px;
+}
+
+.line .step .number {
+    width: 71px;
+    height: 71px;
+    padding: 0;
+    background-image: url(./images/技能树首页_42\ .png);
+}
+
+.step p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 153px;
+    margin: auto 15px auto 15px;
+    font-size: 1.4rem;
+    color: #a8a8a8;
+}
+
+.step button {
+    display: inline-block;
+}
+
+.step .enter-image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/*优秀学员展示*/
+
+.outstanding-student .students-line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 410px;
+    margin: 0 auto 133px auto;
+}
+
+.outstanding-student .content-title-text h1 {
+    flex-wrap: wrap;
+}
+
+.students {
+    width: 269px;
+    height: 369px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 1px #e2e2e2;
+}
+
+.students img {
+    margin-top: 16px;
+}
+
+.students p span {
+    display: inline-block;
+    margin: 42px auto 31px auto;
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+}
+
+.students .students-detail {
+    width: 208px;
+    font-size: 1.6rem;
+    color: #999;
+    margin: auto;
+    text-align: left;
+}
+
+.students-dot {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 66px;
+}
+
+/*战略合作企业*/
+.enterprise {
+    text-align: center;
+}
+
+
+
+.enterprise-icon-line {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.enterprise-icon-line div:hover {
+    box-shadow: 0 0 5px #d6d6d6;
+}
+
+.enterprise-icon-line div {
+    position: relative;
+    width: 240px;
+    height: 177px;
+    background: #fff;
+    box-shadow: 0 0 2px #e2e2e2;
+}
+
+.enterprise-icon-line div img {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    height: 135px;
+    width: 100%;
+    margin-top: 92px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.link-line {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 24px;
+    margin: auto;
+}
+
+.content-title-text-link {
+    text-align: center;
+    padding-top: 19px;
+    margin-bottom: 26px;
+}
+
+.link-line li {
+    float: left;
+    width: 76px;
+    border-bottom: 1px solid transparent;
+}
+
+.link-line li a {
+    font-size: 1.4rem;
+    color: #999;
+
+}
+
+.link-line li:hover {
+    border-bottom: 1px solid #26a26f;
+}
+
+.footer {
+    height: 202px;
+    background-color: #26a26f;
+}
+
+.footer-content {
+    width: 1200px;
+    height: 170px;
+    margin: auto;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.footer div p {
+    display: inline-block;
+}
+
+.cooperate-and-contact {
+    display: inline-block;
+    width: 230px;
+    height: 100%;
+}
+
+.cooperate-and-contact div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperate-and-contact div a {
+    width: 75px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.cooperate-and-contact div .line {
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.web-slogans {
+    margin: 37px auto 65px auto;
+    font-size: 1.6rem;
+}
+
+.its-website {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin-left: 142px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.its-website-text {
+    display: inline-block;
+    margin: 36px 0 7px 0;
+}
+
+.its-website-url a {
+    display: inline-block;
+    height: 22px;
+    margin: 20px 30px 0 auto;
+    font-size: 1.4rem;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.its-website-url a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.footer-content img {
+    display: inline-block;
+    width: 92px;
+}
+
+.wechat-public-number {
+    float: right;
+    width: 92px;
+    margin-top: 38px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.wechat-public-number p::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.wechat-public-number p {
+    width: 92px;
+    height: 24px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.version-number {
+    height: 30px;
+    color: #fff;
+}
+
+.version-number p {
+    margin-left: 723px;
+    line-height: 30px;
+}
+
+@keyframes rotation {
+    0%,
+    15% {
+        margin-left: 0;
+    }
+
+    25%,
+    40% {
+        margin-left: -100vw;
+    }
+
+    50%,
+    65% {
+        margin-left: -200vw;
+    }
+
+    75%,
+    90% {
+        margin-left: -300vw;
+    }
+}
