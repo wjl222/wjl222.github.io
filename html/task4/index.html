@@ -6,33 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>test4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 
 <body>
     <nav>
-        <div class="login-text">注册</div>
-        <div class="register-text">登陆</div>
-        <div class="close-text">关闭</div>
+        <button class="login-text">
+            <p>注册</p>
+        </button>
+        <!--
+                    --><button>
+            <p>登陆</p>
+        </button>
+        <!--
+                    --><button class="close-text">
+            <p>关闭</p>
+        </button>
     </nav>
     <form method="post" action="save.php">
         <div class="login-box">
-            <img src="https://t1.picb.cc/uploads/2019/03/13/VQPm0u.png">
+            <img src="http://wjl222.github.io/html/task4/images/test4_03.png">
             <input type="text" name="phone-number" placeholder="请输入手机号">
         </div>
         <div class="pass-box">
-            <img src="https://t1.picb.cc/uploads/2019/03/13/VQPcHa.png" alt="VQPcHa.png">
+            <img src="http://wjl222.github.io/html/task4/images/test4_06.png">
             <input type="password" name: "pass" placeholder="请输入密码">
         </div>
     </form>
     </div>
     <div class="footer">
-        <p class="login">
+        <button class="login">
             登&nbsp陆
-        </p>
-        <div class="forget-password">
-            <p>忘记密码?</p>
+        </button>
+        <div class="forget-password-box">
+            <a class="forget-password" href="#">
+                忘记密码?
+            </a>
         </div>
+
+    </div>
+
 </body>
 
 </html>
