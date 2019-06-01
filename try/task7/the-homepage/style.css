@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+/*总的设置结束*/
+
+/*头部开始*/
+nav {
+    position: fixed;
+    top: 0;
+    height: 45px;
+    width: 100vw;
+    background: #29bde0;
+}
+
+nav img {
+    height: 15px;
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+/*内容开始*/
+
+.content {
+    padding-top: 45px;
+    background: #f0f0f0;
+}
+
+.the-last-game button,
+.game-name,
+.game-edition {
+    background: #fff;
+}
+
+.the-last-game,
+.game-edition {
+    width: 80vw;
+    margin: auto;
+}
+
+.the-last-game {
+    position: relative;
+    height: 85px;
+    text-align: center;
+}
+
+.the-last-game button {
+    height: 58px;
+    width: 100%;
+    margin-top: 13.5px;
+    font-size: 17px;
+    color: #9a9a9a;
+    line-height: 58px;
+    border: 1px solid #c9c9c9;
+}
+
+.the-last-game img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    height: 20px;
+    margin-right: 7px;
+}
+
+.game-edition {
+    height: 402px;
+}
+
+.game-name {
+    display: inline-block;
+    height: 58px;
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    color: #fbb435;
+    border-bottom: 1px solid #fbb435;
+    border: 1px solid #fff;
+}
+
+.game-edition-option {
+    position: relative;
+    height: 109px;
+    text-align: center;
+}
+
+.game-edition-option img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 27.5px;
+    margin-top: 35.25px;
+    margin-right: 1.8%;
+}
+
+.game-edition-option button {
+    height: 68px;
+    width: 81%;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #69d1e9;
+}
+
+.game-edition-option p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #787878;
+}
+
+/*底部小点开始*/
+
+.dot {
+    display: flex;
+    align-content: space-between;
+    width: 46.5px;
+    margin: 6px auto;
+}
+
+.dot img {
+    width: 9px;
+    height: 9px;
+}
+
+
