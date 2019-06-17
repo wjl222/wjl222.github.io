@@ -1,6 +1,12 @@
+
+/*总样式开始*/
 html {
-    height: 100%;
     font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow: scroll;
 }
 
 * {
@@ -15,6 +21,7 @@ button {
 }
 
 a {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -22,13 +29,12 @@ p {
     margin: 0;
 }
 
-/*联系方式*/
+/*联系方式开始*/
 
 .contact-information {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    line-height: 10px;
     width: 100%;
     height: 40px;
     font-size: 1.4rem;
@@ -36,22 +42,44 @@ p {
     background-color: #fff;
 }
 
-.contact-information img {
-    height: 25px;
-}
-
 .contact-information p {
     margin-left: 16.7%;
 }
 
-.contact-information div {
+.wechat-qq-weibo-icon {
     display: flex;
     justify-content: space-between;
-    width: 110px;
+    width: 107px;
     margin-right: 16.7%;
 }
 
-/*头部选项*/
+.wechat-qq-weibo-icon img {
+    height: 25px;
+}
+
+.sign-in-and-sign-up {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    line-height: 10px;
+    visibility: hidden; /*使头部的登录和注册隐藏*/
+}
+
+.sign-in-and-sign-up a {
+    float: left;
+    width: 46%;
+    text-align: center;
+    color: #000;
+}
+
+.sign-in-and-sign-up a:nth-child(1) {
+    padding-right: 2%;
+    border-right: 1px solid #000;
+}
+
+/*联系方式结束*/
+
+/*头部选项开始*/
 
 .header {
     position: relative;
@@ -60,36 +88,42 @@ p {
     background-color: #29b078;
 }
 
-.header button:nth-child(4) {
-    border-bottom: 4px solid #fff;
-}
-
-.header button:hover {
-    border-bottom: 4px solid #fff;
+.header .option-img {
+    display: none;
 }
 
 
-.header button {
+.header-other-option a:nth-child(4) li {
+    border-bottom: 4px solid #fff;
+}
+
+.header-other-option li:hover {
+    border-bottom: 4px solid #fff;
+}
+
+
+.header-other-option li {
     float: right;
-    height: 100%;
+    height: 96px;
     width: 101px;
     padding: 0;
+    line-height: 100px;
     font-size: 1.6rem;
     color: white;
+    text-align: center;
+    list-style: none;
     border-bottom: 4px solid transparent;
 }
 
-.other-option {
+.header-other-option {
     height: 100%;
     margin-right: 16%;
 }
 
 .website-name-and-link {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 16.7%;
+    float: left;
+    margin-left: 16.7vw;
+    margin-top: 18.5px;
 }
 
 .website-name-and-link span {
@@ -107,47 +141,60 @@ p {
     width: 108px;
     letter-spacing: 1.2px;
 }
+/*头部选项结束*/
+
+/*主题图片开始*/
 
 .title-picture{
     content: "";
     width: 100%;
     height: 13.02vw;
-    background-image: url(http://wjl222.github.io/html/task8/homepage/images/战略合作企业_02.png);
+    background-image: url(https://wjl222.github.io/html/task8/co-operative-enterprise/images/战略合作企业_02.png);
     background-size: 100% 13.02vw;
 }
-/*内容*/
+
+/*主题图片结束*/
+
+/*内容开始*/
 .content {
     background-color: #fafafa;
 }
 
-.content .homepage-and-enteprise {
+.homepage-and-enteprise {
     height: 80px;
     width: 1200px;
     margin: auto;
     line-height: 80px;
 }
 
-.content .homepage-and-enteprise a {
+.homepage-and-enteprise a {
     font-size: 1.6rem;
     color: #000;
 }
 
-.content .homepage-and-enteprise a:nth-child(2) {
+.homepage-and-enteprise a:nth-child(2) {
     color: #29b078;
 }
 
 
-/*公司名称和介绍*/
+/*公司介绍开始*/
 .Company-and-Brief-Introduction {
-    display: flex;
-    justify-content: space-between;
-    height: 1100px;
     width: 1200px;
     margin: auto;
+    padding-bottom: 232px;
+    overflow: hidden;
 }
 
+.Company-and-Brief-Introduction:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*合作企业列表开始*/
+
 .enteprise {
-    display: inline-block;
+    float: left;
     height: 708px;
     width: 300px;
     text-align: center;
@@ -175,23 +222,25 @@ p {
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
-    width: 68px;
+    width: 75px;
     height: 100%;
     margin: auto;
-    list-style-image: url(./images/战略合作企业_02s_05.png)
+    list-style-image: url(https://wjl222.github.io/html/task8/co-operative-enterprise/images/战略合作企业_02s_05.png)
 }
 
-.enteprise-link ul li:nth-child(3) {
-    list-style-image: url(./images/战略合作企业_02s_08.png);
+.enteprise-link ul a:nth-child(3) li {
+    list-style-image: url(https://wjl222.github.io/html/task8/co-operative-enterprise/images/战略合作企业_02s_08.png);
 }
 
 .enteprise-link ul li:nth-child(3) a {
     color: #ff650e;
 }
-
+/*合作企业列表结束*/
+/*企业详细介绍开始*/
 .company-introduction {
-    display: inline-block;
+    float: left;
     width: 870px;
+    margin-left: 30px;
     font-size: 1.4rem;
     color: #999;
     text-indent: 2rem;
@@ -208,60 +257,93 @@ p {
 .company-proflie {
     position: relative;
     border-bottom: 1px solid #f3f3f3;
-    height: 155px;
 }
 
-.company-proflie img {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 121px;
-    transform: translate(-50%,-50%);
+.company-proflie:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.company-proflie p {
+
+.company-proflie-img {
     position: absolute;
     top: 50%;
-    left: 246px;
     transform: translate(0,-50%);
-    width: 570px;
+
+    width: 27.1%;
+    text-align: center;
+    text-indent: 0;
+    line-height: 0;
+}
+
+.company-proflie-img img {
+
+}
+
+.company-proflie-text {
+    float: left;
+    width: 72.9%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 27.1%;
+}
+
+.company-proflie-text:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.company-proflie-text p {
+    margin: auto;
+    width: 90%;
+    height: 100%
 }
 
 .detailed-introduction-of-enterprises p {
-    width: 740px;
+    width: 85%;
     margin: 30px auto;
 }
 
+/*企业详细介绍结束*/
+
+/*底部内容开始*/
+
 .footer {
-    margin-top: 230px;
-    height: 202px;
     background-color: #26a26f;
 }
 
 .footer-content {
     width: 1200px;
-    height: 170px;
     margin: auto;
     color: #fff;
     font-size: 1.4rem;
+    overflow: hidden;
 }
 
-.footer div p {
-    display: inline-block;
+.footer-content:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.cooperate-and-contact {
-    display: inline-block;
-    width: 230px;
-    height: 100%;
+.cooperate-and-contact,
+.its-website,
+.wechat-public-number {
+    float: left;
+    width: 33%;
 }
 
-.cooperate-and-contact div {
-    display: flex;
-    justify-content: space-between;
+.cooperate-and-contact div::after {
+    content:"";
+    display: block;
+    clear: both;
+    
 }
 
 .cooperate-and-contact div a {
+    float: left;
     width: 75px;
     height: 16px;
     line-height: 16px;
@@ -280,10 +362,7 @@ p {
 }
 
 .its-website {
-    display: inline-block;
     vertical-align: top;
-    width: 250px;
-    margin-left: 142px;
     font-size: 1.6rem;
     color: #fff;
 }
@@ -311,9 +390,9 @@ p {
     width: 92px;
 }
 
+/*下面是公众号*/
+
 .wechat-public-number {
-    float: right;
-    width: 92px;
     margin-top: 38px;
     font-size: 1.6rem;
     color: #fff;
@@ -331,15 +410,182 @@ p {
     height: 24px;
     text-align: justify;
     overflow: hidden;
+    clear: both;
 }
+
+.wechat-public-number p,
+.wechat-public-number img {
+    float: right;
+}
+
+/*下面是版本号*/
 
 .version-number {
-    height: 30px;
     color: #fff;
+    text-align: center;
 }
 
-.version-number p {
-    margin-left: 723px;
+.version-number:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.version-number .version-number-text {
+    float: right;
+    margin: auto;
     line-height: 30px;
+    width: 100vw;
+    text-align: center;
+}
+
+/*底部内容结束*/
+
+@media screen and (max-width:1199px) /*小于1199px时*/ {
+    .homepage-and-enteprise,
+    .Company-and-Brief-Introduction,
+    .footer {
+        width: 100vw;
+    }
+
+    .enteprise {
+        width: 25%;
+    }
+
+    .enteprise {
+        margin-left: 2.5%;
+    }
+    .homepage-and-enteprise {
+        padding-left: 2.5%;
+    }
+
+    .company-introduction {
+        width: 67.5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .company-proflie p {
+
+    }
+
+    .footer-content {
+        width: 100vw;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:799px) /*小于799px*/{
+    
+    .contact-information p {
+        margin-left: 5%;
+    }
+
+    .header {
+        height: 76px;
+    }
+
+    .website-name-and-link {
+        margin-top: 6.5px;
+        margin-left: 5%;
+    }
+
+    .header-other-option,
+    .contact-information div {
+        margin-right: 5%;
+    }
+
+    .header-other-option a li {
+        height: 72px;
+        line-height: 72px;
+    }
+
+    .enteprise {
+        width: 25%;
+    }
+
+    .footer-content {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:600px) /*小于600px*/ {
+
+    .contact-information p,
+    .wechat-qq-weibo-icon {
+        visibility:visible;
+    }
+
+    .sign-in-and-sign-up a {
+        color: #000;
+        display: block;
+    }
+
+    .contact-information div {
+        width: 80px;
+        margin-right: 0;
+    }
+
+    /*上面下拉列表的制作*/
+
+    .header-list-icon {
+        content: "";
+        display: block;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .header-list-icon:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .header:hover .header-option  {
+        display: block;
+    }
+
+    .header-option {
+        display: none;
+    }
+
+    .option-img img {
+        display: block;
+        margin-right: 20px;
+    } 
+
+    .header-option img:hover .option-button {
+        background: #26a26f;
+    }
+
+   .header .header-option {
+       height: 120px;
+       margin-right: 0;
+       overflow: hidden;
+   } 
+
+   .header .header-option:after {
+       content: "";
+       display: block;
+       clear: both;
+   }
+
+    .header-option button {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        background: #29b078;
+    }
+
+    .header-option button:nth:nth-child(4) {
+        background: #36c388;
+        border: 0;
+    }
+
+    .header-option button:hover {
+        background: #5ebb94;
+        border: 0;
+    }
 }
 

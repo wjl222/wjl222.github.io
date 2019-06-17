@@ -1,4 +1,10 @@
 /*整体*/
+
+html,
+body {
+    height: 100vh;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +22,7 @@ button {
 }
 
 body {
-    background: red;
+    background: #eaedee;
 }
 
 /*头部位置代码书写*/
@@ -93,9 +99,9 @@ input::-webkit-input-placeholder {
 }
 
 .forget-password {
+    float: right;
     margin-right: 15px;
     margin-top: 7px;
     font-size: 16px;
     color: #5fc0cd;
-    text-decoration: none;
 }

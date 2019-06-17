@@ -1,11 +1,17 @@
+/*总设置开始*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     width: 100%;
     font-size: 62.5%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+body {
+    overflow-x: hidden;
+    overflow: scroll;
 }
 
 button {
@@ -18,8 +24,12 @@ a {
     text-decoration: none;
 }
 
-/*联系方式*/
+p {
+    margin: 0;
+}
 
+/*总设置结束*/
+/*联系方式开始*/
 .contact-information {
     display: flex;
     align-items: center;
@@ -27,7 +37,6 @@ a {
     width: 100%;
     height: 40px;
     font-size: 1.4rem;
-    line-height: 10px;
     color: #29b078;
     background-color: #fff;
 }
@@ -36,14 +45,40 @@ a {
     margin-left: 16.7%;
 }
 
-.contact-information div {
+.wechat-qq-weibo-icon {
     display: flex;
     justify-content: space-between;
     width: 107px;
     margin-right: 16.7%;
 }
 
-/*头部选项*/
+.wechat-qq-weibo-icon img {
+    height: 25px;
+}
+
+.sign-in-and-sign-up {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    line-height: 10px;
+    visibility: hidden;/*使头部的登录和注册隐藏*/
+}
+
+.sign-in-and-sign-up a {
+    float: left;
+    width: 46%;
+    text-align: center;
+    color: #000;
+}
+
+.sign-in-and-sign-up a:nth-child(1) {
+    padding-right: 2%;
+    border-right: 1px solid #000;
+}
+
+/*联系方式结束*/
+
+/*头部选项开始*/
 
 .header {
     width: 100%;
@@ -73,7 +108,9 @@ a {
     border-bottom: 4px solid transparent;
 }
 
-/*内容表格部分*/
+/*头部选项结束*/
+
+/*内容开始*/
 
 .content {
     width: 1200px;
@@ -96,7 +133,7 @@ a {
     color: #29b078;
 }
 
-/*就业方向选择部分*/
+/*开发方向总选项开始*/
 
 .job-direction {
     display: flex;
@@ -132,7 +169,16 @@ a {
     background-color: #29b078;
 }
 
-/*鼠标事件相关设置*/
+/*开发方向总选项结束*/
+/*开发方向详细介绍开始*/
+
+.development-direction h1 {
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #d0d6d9;
+}
+
+/*鼠标事件相关设置开始*/
 
 .job-detailed-information-mouse-event {
     position: relative;
@@ -171,12 +217,7 @@ a {
     width: 288px;
     text-indent: 2rem;
 }
-
-.development-direction h1 {
-    height: 80px;
-    line-height: 80px;
-    border-bottom: 1px solid #d0d6d9;
-}
+/*鼠标事件相关设置结束*/
 
 /*表格部分*/
 
@@ -229,8 +270,6 @@ td span {
 .wages-table td {
     border-top: 0;
 }
-
-
 
 /*部分*/
 
@@ -331,7 +370,7 @@ td span {
     height: 38px;
 }
 
-/*底部*/
+/*底部开始*/
 .footer {
     height: 202px;
     background-color: #26a26f;
@@ -441,3 +480,5 @@ td span {
     margin-left: 723px;
     line-height: 30px;
 }
+/*底部结束*/
+/*内容结束*/

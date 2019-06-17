@@ -1,5 +1,6 @@
-html{
-    height: 100%;
+html,
+body {
+    height: 100vh;
     font-size: 62.5%;
 }
 
@@ -166,8 +167,8 @@ hr {
     width: 97%;
 }
 
-.blank{
-    height:112.5px;
+.blank {
+    height: 112.5px;
 }
 
 .footer {

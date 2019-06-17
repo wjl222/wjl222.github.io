@@ -1,0 +1,401 @@
+/*通用格式开始*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: #e6e6e6;
+}
+
+/*通用格式结束*/
+
+/*头部联系方式开始*/
+
+.contact-information {
+    height: 40px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.contact-information p {
+    display: inline-block;
+    font-size: 14px;
+    color: #29b078;
+}
+
+.contact-information-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    width: 110px;
+    height: 40px;
+}
+
+.contact-information-icon img {
+    height: 24px;
+}
+
+/*头部联系方式结束*/
+
+/*头部选项开始*/
+
+nav {
+    height: 100px;
+    background: #29b078;
+}
+
+nav .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.enterprise-icon {
+    display: inline-block;
+    width: 108px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.enterprise-icon p {
+    width: 100%;
+    color: #fff;
+    font-size: 8.57px;
+    text-align: center;
+}
+
+
+.navigation-option {
+    float: right;
+    width: 404px;
+}
+
+.navigation-option button {
+    float: left;
+    width: 101px;
+    height: 100px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 4px solid transparent;
+}
+
+.navigation-option button:nth-child(1) {
+    border-bottom: 4px solid #fff;
+}
+
+.navigation-option button:hover {
+    border-bottom: 4px solid #fff;
+}
+
+/*背景图开始*/
+
+.banner-picture {
+    height: 248px;
+    background-image: url(./images/战略合作企业_02.png);
+    background-size: 100% 100%;
+}
+
+/*背景图结束*/
+
+/*企业介绍开始*/
+
+
+.selected-option {
+    height: 79px;
+    font-size: 16px;
+    line-height: 79px;
+}
+
+.selected-option a:nth-child(1) {
+    color: #000;
+}
+
+.selected-option a:nth-child(2) {
+    color: #29b078;
+}
+
+.enterprise-introduce {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 192px;
+}
+
+.enterprise-name {
+    width: 25.42%;
+    height: 710px;
+    text-align: center;
+    box-shadow: 0 0 2px #ededed;
+}
+
+.enterprise-name p {
+    height: 61px;
+    line-height: 61px;
+    font-size: 16px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.enterprise-name ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 649px;
+    width: 70px;
+    margin: auto;
+    list-style-image: url(./images/战略合作企业_02s_05.png);
+}
+
+.enterprise-name ul li {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.enterprise-name ul li:nth-child(3) {
+    list-style-image: url(./images/战略合作企业_02s_08.png);
+}
+
+.enterprise-name ul li a {
+    font-size: 14px;
+    color: #29b078;
+}
+
+.enterprise-name ul li:nth-child(3) a {
+    color: #ff650e;
+}
+
+/*文字排版开始*/
+
+.enterprise-introduce-text {
+    width: 72.5%;
+    color: #999;
+    line-height: 28.22px;
+    font-size: 14px;
+    box-shadow: 0 0 2px #e6e6e6;
+}
+
+.enterprise-introduce-text>div {
+    width: 86%;
+    margin: auto;
+}
+
+.brief-introduction {
+    display: flex;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.brief-introduction img {
+    margin-left: 22px;
+}
+
+.brief-introduction p {
+    display: inline-block;
+    width: 65.5%;
+    padding-left: 34px;
+}
+
+.detailed-introduction p {
+    margin: 38px auto;
+    text-indent: 28px;
+}
+
+/*文字处理结束*/
+
+/*底部开始*/
+
+.footer {
+    background: #29b078;
+}
+
+.footer-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-box-left {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    float: left;
+    height: 170px;
+    width: 30.4%;
+}
+
+.footer-box-left p,
+.footer-box-left div {
+    height: 20px;
+    width: 100%;
+}
+
+
+.its-website {
+    float: left;
+    width: 52.9%;
+    height: 100%;
+}
+
+.its-website-container {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    margin-top: 35px;
+}
+
+.its-website-container div,
+.its-website p {
+    width: 100%;
+}
+
+.its-website a {
+    float: left;
+    width: fit-content;
+    margin-right: 34px;
+}
+
+.wechat-public-number {
+    float: left;
+    width: 16.7%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/*字体设置*/
+
+.footer a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-box-left>p,
+.its-website-container>p,
+.wechat-public-number>p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.wechat-public-number p {
+    display: block;
+    height: 23px;
+    width: 92px;
+    margin: auto;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.wechat-public-number p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/*版本号开始*/
+
+.version-number {
+    margin-left: 30.42%;
+    font-size: 12px;
+    color: #fff;
+}
+
+@media screen and (max-width:1250px) {
+    .container {
+        width: 900px;
+    }
+
+    .banner-picture {
+        height: 13.02vw;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .container {
+        width: 600px;
+    }
+
+    nav,
+    .navigation-option button {
+        height: 70px;
+    }
+
+    .enterprise-icon {
+        margin-top: 9px;
+    }
+
+    .version-number {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container,
+    .navigation-option,
+    .navigation-option button,
+    .enterprise-name,
+    .enterprise-introduce-text,
+    .brief-introduction p,
+    .footer-box div {
+        width: 100vw;
+    }
+
+    nav {
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    /*选项的鼠标事件*/
+
+    nav .container:hover button {
+        display: block;
+    }
+
+    .navigation-option button,
+    .version-number,
+    .contact-information .container {
+        display: none;
+    }
+
+    /*鼠标事件结束*/
+
+    .selected-option,
+    .enterprise-icon {
+        padding-left: 10px;
+    }
+
+    .enterprise-introduce,
+    .brief-introduction {
+        flex-wrap: wrap;
+    }
+
+    .brief-introduction img {
+        margin: 30px auto;
+    }
+
+    .footer-box div {
+        text-align: left;
+    }
+
+    .wechat-public-number p {
+        margin: 0;
+    }
+}

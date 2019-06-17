@@ -1,0 +1,519 @@
+/*通用格式开始*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.content {
+    min-width: 380px;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: #e6e6e6;
+}
+
+/*通用格式结束*/
+
+/*头部联系方式开始*/
+
+.contact-information {
+    height: 40px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.contact-information p {
+    display: inline-block;
+    font-size: 14px;
+    color: #29b078;
+}
+
+.contact-information-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    width: 110px;
+    height: 40px;
+}
+
+.contact-information-icon img {
+    height: 24px;
+}
+
+/*头部联系方式结束*/
+
+/*头部选项开始*/
+
+nav {
+    height: 100px;
+    background: #29b078;
+}
+
+nav .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.enterprise-icon {
+    display: inline-block;
+    width: 108px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.enterprise-icon p {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 8.57px;
+}
+
+
+.navigation-option {
+    float: right;
+    width: 404px;
+}
+
+.navigation-option button {
+    float: left;
+    width: 101px;
+    height: 100px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+}
+
+.navigation-option button:nth-child(1) {
+    border-bottom: 4px solid #fff;
+}
+
+.navigation-option button:hover {
+    border-bottom: 4px solid #fff;
+}
+
+/*内容开始*/
+
+.career-detail-introduce {
+    padding-bottom: 240px;
+}
+
+.homepage-and-career {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+}
+
+.homepage-and-career a:nth-child(1) {
+    color: #000;
+}
+
+.homepage-and-career a:nth-child(2) {
+    color: #29b078;
+}
+
+
+
+.career-detail-choice-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 554px;
+    font-size: 14px;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.career-detail-choice-container span {
+    height: 20px;
+    color: #999;
+}
+
+.career-detail-choice-container div,
+.career-detail-choice-container span {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.career-detail-choice-container a {
+    color: #000;
+    height: 20px;
+}
+
+.career-detail-choice-container div:nth-child(2) a {
+    background: #29b078;
+    color: #fff;
+}
+
+.career-detail-choice-container a:hover {
+    color: #fff;
+    background: #29b078;
+}
+
+.career-direction {
+    height: 80px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 80px;
+}
+
+/*表格开始*/
+
+
+/*鼠标事件设置开始*/
+
+.career-detail-introduce-table,
+.career-detail-introduce-blank-table {
+    position: relative;
+    width: 379px;
+    height: 444px;
+    margin-top: 47px;
+}
+
+.career-detail-introduce-table:hover .mouse-events-text {
+    visibility: visible;
+}
+
+.mouse-events-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    color: #fff;
+    opacity: .76;
+    background: #000;
+}
+
+.mouse-events-text p {
+    font-size: 16px;
+}
+
+.mouse-events-text p:nth-child(1) {
+    margin-top: 84px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.mouse-events-text p:nth-child(2) {
+    display: block;
+    width: 290px;
+    margin: auto;
+    line-height: 22.2px;
+    text-indent: 32px;
+}
+
+/*鼠标事件设置结束*/
+
+/*表格开始*/
+
+table {
+    height: 444px;
+    width: 380px;
+    text-align: left;
+    table-layout: fixed;
+    border-right: 1px solid #edf1f2;
+    border-bottom: 1px solid #edf1f2;
+    box-shadow: 0 0 2px #edf1f2;
+}
+
+td {
+    border-top: 1px solid #edf1f2;
+    border-left: 1px solid #edf1f2;
+}
+
+td p {
+    display: inline-block;
+}
+
+.career-detail-introduce-line {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.career-name-and-introduce {
+    display: flex;
+    align-items: center;
+    width: 368px;
+    height: 100%;
+    padding-left: 11px;
+    text-align: center;
+}
+
+.career-name-and-introduce img {
+    width: 138px;
+    height: 140px;
+}
+
+.career-name-and-introduce div {
+    display: inline-block;
+    width: 214px;
+    padding-left: 8px;
+    vertical-align: 120%;
+    word-break: break-all;
+    text-align: left;
+}
+
+.career-name-and-introduce div p:nth-child(1) {
+    padding-bottom: 17px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.career-name-and-introduce div p:nth-child(2) {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.career-name-and-introduce img {
+    vertical-align: center;
+}
+
+.job-requirement-title {
+    margin: 0 11px;
+    color: #999;
+    font-size: 12px;
+}
+
+.number-of-students {
+    margin-left: 11px;
+    font-size: 14px;
+    font-weight: 900px;
+}
+
+.red-word {
+    font-size: 12px;
+    color: #f01400;
+}
+
+.middle-text {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: #999;
+}
+
+.salary span {
+    margin-right: 10px;
+    margin-left: 13px;
+
+}
+
+.salary span:nth-child(2) {
+    float: right;
+}
+
+/*表格设置结束*/
+
+
+/*底部开始*/
+
+.footer {
+    background: #29b078;
+}
+
+.footer-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-box-left {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    float: left;
+    height: 170px;
+    width: 30.4%;
+}
+
+.footer-box-left p,
+.footer-box-left div {
+    height: 20px;
+    width: 100%;
+}
+
+
+.its-website {
+    float: left;
+    width: 52.9%;
+    height: 100%;
+}
+
+.its-website-container {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    margin-top: 35px;
+}
+
+.its-website-container div,
+.its-website p {
+    width: 100%;
+}
+
+.its-website a {
+    float: left;
+    width: fit-content;
+    margin-right: 34px;
+}
+
+.wechat-public-number {
+    float: left;
+    width: 16.7%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/*字体设置*/
+
+.footer a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-box-left>p,
+.its-website-container>p,
+.wechat-public-number>p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.wechat-public-number p {
+    display: block;
+    height: 23px;
+    width: 92px;
+    margin: auto;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.wechat-public-number p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/*版本号开始*/
+
+.version-number {
+    margin-left: 30.42%;
+    font-size: 12px;
+    color: #fff;
+}
+@media screen and (max-width:1250px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .container {
+        width: 600px;
+    }
+
+    nav,
+    .navigation-option button {
+        height: 70px;
+    }
+
+    .enterprise-icon {
+        margin-top: 9px;
+    }
+
+    .career-detail-introduce-line {
+        justify-content: center;
+    }
+
+    .career-detail-introduce-blank-table {
+        display: none;
+    }
+
+
+    .version-number {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container,
+    .navigation-option,
+    .navigation-option button,
+    .footer-box div {
+        width: 100vw;
+    }
+
+    nav {
+        height: fit-content;
+        overflow: hidden;
+    }
+
+        /*选项的鼠标事件*/
+
+        nav .container:hover button {
+            display: block;
+        }
+    
+        .navigation-option button,
+        .version-number,
+        .contact-information .container {
+            display: none;
+        }
+    
+        /*鼠标事件结束*/
+
+        .career-detail-choice-container {
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        .career-detail-choice-container div,
+        .career-detail-choice-container span {
+            width: 100vw;
+            text-align: center;
+        }
+
+        .career-detail-choice-container div {
+            display: none;
+        }
+
+        .career-detail-choice:hover div {
+            display: block;
+        }
+
+        .career-direction {
+            display: inline-block;
+            width: 100vw;
+            text-align: center;
+        }
+
+        .footer-box div {
+            text-align: left;
+        }
+    
+        .wechat-public-number p {
+            margin: 0;
+        }
+}
