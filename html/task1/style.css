@@ -17,20 +17,3 @@ html,body {
      margin: 1.5%;
      border-radius: 20px;
  }
-
- input {
-     display: block;
-     width: 500px;
-     height: 100px;
-     margin-top: 30px;
-     font-size: 32px;
-     outline: none;
-     background: transparent;
-     border: 7px solid yellow;
-     border-radius: 20px;
- }
-
- input:hover {
-     background-color: yellow;
-
- }
