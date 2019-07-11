@@ -43,6 +43,7 @@ nav img {
     height: 100%;
     width: 100%;
     padding-top: 5vh;
+    box-sizing: border-box;
     background-color: #f0f0f0;
 }
 
