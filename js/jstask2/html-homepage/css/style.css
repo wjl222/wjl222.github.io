@@ -1,0 +1,133 @@
+html {
+    font-size: 625%;
+}
+/*表头*/
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: #29bde0;
+}
+
+nav img {
+    height: 2.45vh;
+    padding-left: 1.72%;
+}
+/*内容*/
+.main {
+    height: 100%;
+    padding-top: 5vh;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.last-game {
+    position: relative;
+    margin: 6.64vh auto 0 auto;
+    text-align: center;
+    line-height: 10.55vh;
+    width: 89.06%;
+    height: 10.55vh;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+
+.last-game p {
+    display: inline-block;
+    width: 76.8%;
+    font-size: .17rem;
+}
+
+.last-game .return img {
+    height: 3.64vh;
+
+}
+
+.return{
+    position: absolute;
+    right: 2.19%;
+    height: 10.55vh;
+    outline: none;
+}
+
+.edition {
+    margin: 3vh auto 0 auto;
+    height: 70.55vh;
+    width: 89.06%;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+}
+
+.ghost-game {
+    height: 8.18vh;
+    font-size: .17rem;
+    color: #fbb435;
+    line-height: 8.18vh;
+    text-align: center;
+    border-bottom: 1px solid #fbb435;
+}
+
+.simplified-edition,
+.guessing-edition,
+.ldiot-edition {
+    display: inline-block;
+    height: 12.18vh;
+    width: 72.18%;
+    text-align: center;
+    line-height: 12.18vh;
+    font-size: .16rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #69d1e9;
+}
+
+.option {
+    position: relative;
+    width: 100%;
+    margin: 2.73vh auto 2vh auto;
+    text-align: center;
+}
+
+.option:hover .begin {
+    opacity: 10;
+}
+
+.begin img {
+    height: 5vh;
+}
+
+.begin {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 3.25%;
+    transform: translate(0, -50%)
+}
+
+.users-number {
+    margin: auto;
+    font-size: .12rem;
+    color: #787878;
+    text-align: center;
+}
+
+.pot {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 14.69%;
+    padding-bottom: .82vh;
+}
+
+.pot img {
+    width: 1.45vh;
+    height: 1.45vh;
+}
