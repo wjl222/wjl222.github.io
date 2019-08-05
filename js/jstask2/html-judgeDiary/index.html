@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>task-7</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no" />
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
 </head>
@@ -14,9 +13,9 @@
 <body>
     <nav>
         <div class="container">
-            <img src="./images/three-line.png" class="more-option">
+            <img id="return_key" src="./images/return.png" class="more-option">
             法官日记
-            <img src="./images/return.png" class="return-key">
+            <img id="close_key" src="./images/close.png" class="return-key">
         </div>
     </nav>
 
@@ -25,18 +24,19 @@
             <ul class="option_line" id="option_line">
                 <li class="option">
                     <div class="option-text">
-                        <p class="option-identity" id="option-identity"></p>
-                        <p class="option-number" id="option-number"></p>
+                        <p class="option-identity" id="option-identity">人</p>
+                        <p class="option-number" id="option-number">1</p>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
     <footer>
-        <button class="vote-die" onclick="start()">
-            开始游戏
+        <button class="vote-die" onclick="start()" id="start">
+            
         </button>
     </footer>
     <script src="./js/html-judgeDiary.js"></script>
 </body>
+
 </html>

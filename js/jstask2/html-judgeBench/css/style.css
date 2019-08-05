@@ -31,7 +31,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 3;
-  height: 7.73vh;
+  height: 8vh;
   width: 100vw;
   font-size: 17px;
   color: #fff;
@@ -47,14 +47,17 @@ nav .container {
   margin: auto;
 }
 
-.return,
-.close {
+nav img {
   height: 18px;
+}
+
+#return {
+  padding-right: 7px;
 }
 
 .content {
   height: 100%;
-  padding-top: 7.73vh;
+  padding-top: 8vh;
   padding-bottom: 11.82vh;
   box-sizing: border-box;
   background: #f0f0f0;
@@ -115,6 +118,14 @@ nav .container {
 .small_list button {
   margin-top: 15px;
   outline: none;
+}
+
+.lastDay .blue_box {
+  background: #92b7a5;
+}
+
+.lastDay .blue_triangle {
+  border-right: 6px solid #92b7a5;
 }
 
 .small_list_container:after {

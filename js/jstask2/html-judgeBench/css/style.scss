@@ -23,10 +23,12 @@ $blueColor : #29bde0;
 $fontSize17: 17px;
 $fontSize20: 20px;
 $whiteColor: #fff;
-%positionR{
+
+%positionR {
     position: relative;
 }
-%positionA{
+
+%positionA {
     position: absolute;
 }
 
@@ -35,7 +37,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 3;
-    height: 7.73vh;
+    height: 8vh;
     width: 100vw;
     font-size: $fontSize17;
     color: $whiteColor;
@@ -49,16 +51,18 @@ nav {
         height: 100%;
         margin: auto;
     }
+    img {
+        height: 18px;
+    }
 }
 
-.return,
-.close {
-    height: 18px;
+#return {
+    padding-right: 7px;
 }
 
 .content {
     height: 100%;
-    padding-top: 7.73vh;
+    padding-top: 8vh;
     padding-bottom: 11.82vh;
     box-sizing: border-box;
     background: #f0f0f0;
@@ -88,6 +92,7 @@ nav {
     color: $blueColor;
     line-height: 7.82vh;
     text-align: center;
+
     img {
         @extend %positionA;
         right: 3.125vw;
@@ -112,14 +117,30 @@ nav {
     width: 83.3vw;
     padding: 4.6vh 3.125vw 4.6vh 0;
     border-left: 2px solid #c9c9c9;
+
     button:nth-child(1) {
         margin-top: 0;
     }
+
     button {
         margin-top: 15px;
         outline: none;
     }
 }
+
+.lastDay {
+
+    .blue_box {
+        background: #92b7a5;
+    }
+
+    .blue_triangle {
+        border-right: 6px solid #92b7a5;
+    }
+
+}
+
+
 
 .small_list_container:after {
     content: "";
@@ -148,7 +169,7 @@ nav {
     @extend %positionA;
     left: 0;
     top: 50%;
-    transform: translate(-100%,-50%);
+    transform: translate(-100%, -50%);
     height: 11px;
     width: 11px;
     border-right: 6px solid #24a7c6;
@@ -163,7 +184,7 @@ nav {
     z-index: 2;
     left: 50%;
     top: 0;
-    transform: translate(-50%,-95%);
+    transform: translate(-50%, -95%);
     height: 1.64vh;
 }
 
@@ -179,7 +200,7 @@ nav {
     @extend %positionA;
     top: 50%;
     left: -10.65vw;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 3.2vh;
     height: 3.2vh;
     padding: 6px;
@@ -202,6 +223,7 @@ footer {
     height: 11.82vh;
     width: 100%;
     background-color: rgba(41, 189, 224, .7);
+
     input[type="button"] {
         width: 42.5%;
         height: 7.73vh;

@@ -73,7 +73,8 @@ button {
 button {
     border: 0 none;
     background-color: transparent;
-    cursor: pointer
+    cursor: pointer;
+    outline: none;
 }
 
 /* 重置表单button按钮效果 */

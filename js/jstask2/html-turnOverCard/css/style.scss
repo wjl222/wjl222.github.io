@@ -16,7 +16,7 @@ $whiteColor: #fff;
 nav {
     position: fixed;
     top: 0;
-    height: 7.73vh;
+    height: 8vh;
     width: 100vw;
     font-size: $fontSize17;
     color: $whiteColor;
@@ -28,16 +28,14 @@ nav {
         width: 100%;
         height: 100%;
     }
-}
-
-.return,
-.close {
-    height: 18px;
+    img {
+        height: 18px;
+    }
 }
 
 .content {
     height: 100vh;
-    padding-top: 7.73vh;
+    padding-top: 8vh;
     box-sizing: border-box;
     background: $blueColor;
 }

@@ -1,70 +1,45 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-    <script type="text/javascript" src="./js/js.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
 </head>
+
 <body>
     <nav>
         <img src="./images/three-line.png">
     </nav>
     <div class="main">
-        <div class="last-game">
-            <p>上次游戏：捉鬼猜词版</p>
-            <button class="return" onclick="returnKey()"><img src="./images/get-into.png"></button>
-        </div>
-        <div class="edition">
-            <p class="ghost-game">
-                捉鬼游戏
-            </p>
-            <div class="option">
-                <button class="simplified-edition" onclick="simplified_Edition()">
-                    简化版
-                </button>
-                <div class="begin">
-                    <img src="./images/orange-triangle.png">
-                </div>
+        <div class="container">
+            <div class="last-game">
+                上次游戏:<span id="last_game_text">简化版</span>
+                <img class="return" src="./images/get-into.png">
             </div>
-
-            <p class="users-number">
-                有1133个用户正在玩此款游戏
-            </p>
-            <div class="option">
-                <button class="guessing-edition">
-                    猜词版
-                </buttton>
-               <button class="begin">
-                    <img src="./images/orange-triangle.png">
-               </button>
-            </div>
-            <p class="users-number">
-                有1133个用户正在玩此款游戏
-            </p>
-            <div class="option">
-                <p class="ldiot-edition">
-                    白痴版
+            <div class="edition">
+                <p class="ghost-game">
+                    捉鬼游戏
                 </p>
-                <div class="begin">
-                     <img src="./images/orange-triangle.png">
+                <div class="option">
+                    <button id="simplified-edition">简化版</button>
+                    <img class="begin" src="./images/orange-triangle.png">
+                </div>
+                <div class="option">
+                    <button id="guessing-edition">猜词版</buttton>
+                    <img class="begin" src="./images/orange-triangle.png">
+                </div>
+                <div class="option">
+                    <button id="ldiot-edition">白痴版</button>
+                    <img class="begin" src="./images/orange-triangle.png">
                 </div>
             </div>
-            <p class="users-number">
-                    有1133个用户正在玩此款游戏
-            </p>
-                <div class="pot">
-                    <img src="./images/blue-point.png">
-                    <img src="./images/grey-point.png">
-                    <img src="./images/grey-point.png">
-                    <img src="./images/grey-point.png">
-                </div>
         </div>
-        
-
     </div>
+    <script type="text/javascript" src="./js/homepage.js"></script>
 </body>
+
 </html>

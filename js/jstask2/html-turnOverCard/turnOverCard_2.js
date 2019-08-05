@@ -1,12 +1,13 @@
-var playerIdentity = JSON.parse(localStorage.getItem("player"));//接收分配人数页面的身份数据
+var play = JSON.parse(sessionStorage.getItem("player"));//接收分配人数页面的身份数据
 // var playerOrder = JSON.parse(localStorage.getItem("playerOrder"));//接收分配人数页面的人物身份数组的序号。
 var role = document.getElementById("role");//获取角色中的可以更改的身份内容的标签，以作为修改的前提。
 var phrase = document.getElementById("phrase");
 var people_word = JSON.parse(sessionStorage.getItem("people_word"));//获取身份内容
 var ghost_word = JSON.parse(sessionStorage.getItem("ghost_word"));
 var sumbitText = document.getElementById("sumbit");//获取存放下面提交按钮中下一个使用者的数字序号的标签
-var a = 0;  //a为点击次数
-
+var a = 0,  //a为点击次数
+    return_key = document.getElementById("return_key"),
+    close_key = document.getElementById("close_key");
 
 function hide() { //点击隐藏自己的身份
     var sumbit = document.getElementById("sumbit");
@@ -34,15 +35,15 @@ function sumbit() {//点击一次执行一次。
         sumbitText.innerHTML = "查看" + newPlayerNumber + "号身份"
     }
 
-    if (a / 2 == playerIdentity.length) { //点击次数除以二等于任务身份时，即人数都看完了
+    if (a / 2 == play.length) { //点击次数除以二等于任务身份时，即人数都看完了
         window.location.href = "../html-judgeDiary/index.html";
     }
 
-    if (a / 2 + 0.5 == playerIdentity.length) { //在传阅完的最后一次，下方的字变为传阅完毕。
+    if (a / 2 + 0.5 == play.length) { //在传阅完的最后一次，下方的字变为传阅完毕。
         sumbitText.innerHTML = "传阅完毕，将手机交给法官";
     }
 
-    role.innerHTML = playerIdentity[a / 2 - 0.5];//按点击次数修改角色名；
+    role.innerHTML = play[a / 2 - 0.5];//按点击次数修改角色名；
     if (role.innerHTML === "水民") {
         phrase.innerHTML = people_word;
     }
@@ -50,3 +51,15 @@ function sumbit() {//点击一次执行一次。
         phrase.innerHTML = ghost_word;
     }
 }
+
+return_key.onclick = function () {
+    window.location.href = "../html-number-setting/index.html";
+};
+
+close_key.onclick = function () {
+    var result = confirm("是否要结束游戏");
+    if (result === true) {
+        window.location.href = "../html-homepage/index.html";
+        sessionStorage.clear();
+    }
+};
