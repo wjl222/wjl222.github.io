@@ -11,7 +11,8 @@ var play = JSON.parse(sessionStorage.getItem("player")), //获取设置人数也
     newArr2,//被杀人的数组；
     whoChoice,//储存被点击的节点；
     remaining_ghosts,//剩余鬼的数量
-    remaining_people;//剩余人的数量
+    remaining_people,//剩余人的数量
+    game_result;//设置游戏结果变量
 
 setTimeout(function () {//遍历之前被杀的人,还原其被杀的状态,改变被杀人的背景色；
     whoBeKilled = JSON.parse(sessionStorage.getItem("newArr2"));
@@ -104,12 +105,7 @@ function vote() {
         alert("幽灵不能杀掉同身份的人")
 
     } else {
-        newArr2 = JSON.parse(sessionStorage.getItem("newArr2"));//接受被杀的人的下标
-        if (newArr2 == null) {//第一次点击的时候newArr2是空的，因为还没有保存被杀人的下标，所以要定义为空数组
-
-            newArr2 = [];
-
-        }
+        newArr2 = JSON.parse(sessionStorage.getItem("newArr2")) || [];//接受被杀的人的下标，第一次点击的时候newArr2是空的，因为还没有保存被杀人的下标，所以要定义为空数组
 
         if (newArr2.indexOf(whoBeKilledNumber) == -1) {//在被杀的人中搜寻要杀的人，如果已经被杀，则弹出警告；
             newArr2.push(whoBeKilledNumber);
@@ -121,7 +117,10 @@ function vote() {
         
             remaining_people = search(play, "水民");//获取剩下来人中水民身份的数量；
             
-            if (remaining_ghosts.length === 0 || remaining_people.length < remaining_ghosts.length) {//判断游戏结束；
+            if (remaining_ghosts.length === remaining_people.length) {
+                window.location.href = ("../html-end/index.html");//游戏结束页面
+            }
+            else if (remaining_ghosts.length === 0 || remaining_people.length < remaining_ghosts.length) {//判断游戏结束；
                 window.location.href = ("../html-end/index.html");//游戏结束页面
             } else {
                 window.location.href = "../html-judgeBench/index.html"; //游戏天数页面；
@@ -131,6 +130,12 @@ function vote() {
             alert("这个人已经被杀了")
         }
 
+        if (remaining_ghosts.length === remaining_people.length || remaining_people.length < remaining_ghosts.length) {
+            game_result = "幽灵胜利";
+        } else {
+            game_result = "水民胜利";
+        }
+        sessionStorage.setItem("game_result",game_result);
     }
     sessionStorage.setItem("remaining_people", JSON.stringify(remaining_people));
     sessionStorage.setItem("remaining_ghosts", JSON.stringify(remaining_ghosts));

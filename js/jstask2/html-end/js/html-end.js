@@ -15,7 +15,9 @@ var newArr2 = JSON.parse(sessionStorage.getItem("newArr2")),//获取被杀的人
     people_word_container = document.getElementById("people_word"),//存放身份的节点
     ghost_word_container = document.getElementById("ghost_word"),
     homepage = document.getElementById("homepage"),//获取主页按钮
-    play_again = document.getElementById("play-again");
+    play_again = document.getElementById("play-again"),
+    game_result = sessionStorage.getItem("game_result"),//获取游戏结果
+    game_result_container = document.getElementById("game_result");
 
 (function () {
     var blank = /^\s*$/;
@@ -60,3 +62,5 @@ play_again.onclick = function () {
         window.location.href = "../html-number-setting/index.html";
     };
 }
+
+game_result_container.innerHTML = game_result;

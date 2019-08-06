@@ -68,6 +68,10 @@ button {
     color: #fff;
 }
 
+.game_result {
+    font-size: 17px;
+}
+
 .surplus_number {
     padding: 1.5vh 0;
 }

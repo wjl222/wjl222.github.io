@@ -10,6 +10,7 @@ var day = document.getElementsByClassName("day"),
     blue_triangle = document.getElementsByClassName("blue_triangle"),
     play = JSON.parse(sessionStorage.getItem("player")),//获取随机设置的人数
     blankText = document.getElementsByClassName("blank"),
+    end_game = document.getElementById("end_game"),
     big_list = document.getElementById("big_list"),
     li_box_class = big_list.children,
     li_box = document.getElementById("li_box"),
@@ -31,13 +32,16 @@ close_key.onclick = function () {
     }
 };
 
+end_game.onclick = function() {
+    var result = confirm("是否确定结束游戏？");
+    if (result === true) {
+        window.location.href = "../html-homepage/index.html";
+    }
+};
+
 (function () {
     gameDayNew = JSON.parse(sessionStorage.getItem("gameDay"));
-    if (gameDayNew != null) {
-        gameDay = gameDayNew;
-    } else {
-        gameDay = 1;
-    };
+    gameDay = gameDayNew || 1;
 
     if (gameDay >= 2) {
         for (let i = 0; i < gameDay - 1; i++) {

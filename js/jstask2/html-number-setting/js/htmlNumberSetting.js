@@ -62,16 +62,20 @@ function shuffle(a) {//随机分配人员的身份的函数。
 function sumbit() {
     people_word = document.getElementById("people_word").value;//保存水民词汇
     ghost_word = document.getElementById("ghost_word").value;//保存ghost词汇
-    if (people_word != "" && ghost_word != "" && people_word === ghost_word) {
+    if (people_word === "" || ghost_word === "") {
+        alert("词汇不能为空");
+    }
+    else if (people_word === ghost_word) {
         alert("水民词汇和幽灵词不能相同");
     }
-    else if (people_word != 0 || ghost_word != 0) {
+
+    else if (people_word !== 0 || ghost_word !== 0) {
         random_text_identity = shuffle(ghost_Text_And_People_Text());
         sessionStorage.setItem("player", JSON.stringify(random_text_identity));
         window.location.href = '../html-turnOverCard/turnOverCard_2.html'
     }
     else {
-        alert("请输入十个字以内的汉字")
+        alert("请输入十个字以内的词汇")
     }
     
     sessionStorage.setItem("people_word", JSON.stringify(people_word));//储存词汇
