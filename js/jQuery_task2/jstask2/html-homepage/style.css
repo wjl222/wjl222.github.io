@@ -21,10 +21,46 @@ nav img {
 }
 /*内容*/
 .main {
+    position: relative;
     height: 100vh;
     box-sizing: border-box;
     padding-top: 10vh;
     background-color: #f0f0f0;
+}
+
+#option_top {
+    position: absolute;
+    margin-left: -100%;
+    z-index: 2;
+    top: 8vh;
+    left: 0;
+    height: 92vh;
+    width: 76vw;
+    background: #fff;
+
+}
+
+#option_top li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.3vh;
+}
+
+#option_top li img:nth-child(1) {
+    height: 20px;
+    margin-left: 10%;
+}
+
+#option_top li img:nth-child(3) {
+    height: 20px;
+    margin-right: 10%;
+}
+
+#option_top li span {
+    width: 40%;
+    font-size: 15px;
+    color: #29bde0;
 }
 
 .container {

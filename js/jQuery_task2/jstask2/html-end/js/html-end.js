@@ -10,16 +10,16 @@ var whoBeKilled = JSON.parse(sessionStorage.getItem("whoBeKilled")),//获取被�
 (function () {
 
     if (gameDay >= 2) {//克隆天数节点li
-        for (let i = 0; i < gameDay - 1; i++) {
+        for (let i = 0; i < gameDay - 1; i++) {//此处减2是因为，本身就有一个而且i是从0开始；
             var li_clone = $(".rounds-details").children("li").clone();
             $(".rounds-details").append(li_clone);
         }
 
-        $(".dayNumber").each(function (i) {
+        $(".dayNumber").each(function (i) {//添加天数的字；
             $(this).text(i + 1)
         })
 
-        $(".day").each(function (i) {
+        $(".day").each(function (i) {//添加详细内容；
 
             if (play[whoBeKilled[i]] === undefined) {
                 $(this).text("");
@@ -34,9 +34,12 @@ var whoBeKilled = JSON.parse(sessionStorage.getItem("whoBeKilled")),//获取被�
         })
     }
 
-    if ($("#rounds-details").find("day:eq(0)").text() === "") {
-        $("#rounds-details li:last-child").css("display", "none");
-    }
+    $("#rounds-details li").find(".day:eq(0)").each(function () {
+        if ($(this).text() === "") {
+            $(this).parents("li").css("display", "none")
+        }
+    })
+    
 
     $("#ghost_number").text(remaining_ghosts.length);//剩余人数
     $("#people_number").text(remaining_people.length);

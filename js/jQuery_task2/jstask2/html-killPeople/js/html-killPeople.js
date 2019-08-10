@@ -11,7 +11,6 @@ var play = JSON.parse(sessionStorage.getItem("player")), //获取设置人数也
 time = JSON.parse(sessionStorage.getItem("killPeopleTime"));//接收点击的次数；
 //如果点击进来的是 第一次；则time为null；null++也就是0；
 
-
 $("#close").click(function () {  //返回键；
     var result = confirm("该回合不能跳过，如果点击确定，则重新开始游戏。");
     if (result === true) {
@@ -46,8 +45,21 @@ $("#close").click(function () {  //返回键；
     if (whoBeKilled != null) {//如果被杀的人的数组不为空，则将被杀的人的背景改了；
         $(".option").each(function (i) {
 
-            if (whoBeKilled.indexOf(i) !== -1) {
+            if (whoBeKilled.indexOf(i) !== -1) {//如果已经被杀；则改变其背景色；和取消他的点击图片显示；
                 $(this).find('.option-identity').css('backgroundColor', '#92b7a5');
+                $(this).hover(function () {
+                    $(this).find(".option-img").css("opacity", "0");
+                }
+                );
+            } else {
+                $(this).hover(
+                    function () {
+                        $(this).find(".option-img").css("opacity", "1");
+                    },
+                    function () {
+                        $(this).find(".option-img").css("opacity", "0");
+                    }
+                );
             }
 
         })
@@ -56,7 +68,9 @@ $("#close").click(function () {  //返回键；
 
 (function () {
 
-    $(document).click(function () {
+    $(".option").find(".option-img").css("opacity", "0");
+
+    $(document).click(function () {//点击选项外部取消class的改变；
         $(".option").each(function () {
             $(this).attr("class", "option");
         })
@@ -89,7 +103,10 @@ $("#close").click(function () {  //返回键；
     })
 
 
+
+
 })();
+
 
 
 function reset() {//遍历其class还原

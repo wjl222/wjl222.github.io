@@ -89,10 +89,6 @@ nav .container {
     width: 33.3%;
 }
 
-.option:hover .option-img {
-    opacity: 1;
-}
-
 .option-text {
     width: 15vh;
     margin: auto;
@@ -123,7 +119,6 @@ nav .container {
     text-align: center;
     padding-top: .75vh;
     padding-bottom: .75vh;
-    opacity: 0;
 }
 
 footer {

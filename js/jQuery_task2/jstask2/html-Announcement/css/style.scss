@@ -1,0 +1,21 @@
+nav {
+    height: 8vh;
+    color: #fff;
+    background-color: #29bde0;
+    img {
+        height: 20px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 93%;
+        height: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+}
+
+.hide {
+    opacity: 0;
+}

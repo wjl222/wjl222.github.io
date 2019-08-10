@@ -1,11 +1,6 @@
 var play = JSON.parse(sessionStorage.getItem("player")),//获取随机设置的人数
     gameDay;//设置原始天数；
 
-$("#return").click(function () {//返回键的设置；
-    history.back(-1);
-    sessionStorage.removeItem("tim");
-});
-
 $("#close").click(function () {//关闭按钮的设置，也就是那个叉；
     var result = confirm("是否要结束游戏");
     if (result === true) {
