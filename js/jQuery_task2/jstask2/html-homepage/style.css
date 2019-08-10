@@ -1,0 +1,98 @@
+nav,
+.main{
+    min-width: 320px;
+}
+
+/*表头*/
+nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: #29bde0;
+}
+
+nav img {
+    height: 2.45vh;
+    padding-left: 1.72%;
+}
+/*内容*/
+.main {
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 89.06vw;
+    margin: auto;
+}
+
+.last-game {
+    position: relative;
+    height: 10.55vh;
+    margin-top: 4vh;
+    text-align: center;
+    line-height: 10.55vh;
+    font-size: 17px;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+
+.return{
+    position: absolute;
+    top: 50%;
+    right: 2.19%;
+    transform: translate(0,-50%);
+    height: 3.64vh;
+}
+
+.edition {
+    height: 70.55vh;
+    margin: 3vh auto 0 auto;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+}
+
+.ghost-game {
+    height: 8.18vh;
+    font-size: 17px;
+    color: #fbb435;
+    line-height: 8.18vh;
+    text-align: center;
+    border-bottom: 1px solid #fbb435;
+}
+
+.option button {
+    display: block;
+    height: 12.18vh;
+    width: 72.18%;
+    margin: auto;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    line-height: 12.18vh;
+    background-color: #69d1e9;
+}
+
+.option {
+    position: relative;
+    margin: 5.73vh auto 5vh auto;
+}
+
+.option:hover .begin {
+    opacity: 1;
+}
+
+.begin {
+    position: absolute;
+    top: 50%;
+    right: 3.25%;
+    transform: translate(0, -50%);
+    height: 5vh;
+    opacity: 0;
+}

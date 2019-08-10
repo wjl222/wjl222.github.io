@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img id="return_key" src="./images/return.png">
+            查看身份
+            <img id="close_key" src="./images/close.png">
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <div class="yellowCordIdentity">
+                <div class="hide" id="identity">
+                    <p class="sPlayerNumber" id="yellowCardNum">1</p>
+                    <img class="wowIcon" src="./images/identity.png">
+                    <p class="role">角色：<span id="role"></span></p>
+                    <p class="phrase">词组:<span id="phrase"></span></p>
+                    <p class="tip">想办法猜到人的词，同时还要注意不要暴露自己哦！</p>
+                </div>
+                <img class="icon" id="seeIdentity" src="./images/see-identity.png">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <button id="sumbit">
+                查看<span id="nextPlayerNumber">1</span>号身份
+            </button>
+        </div>
+    </footer>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./turnOverCard_2.js"></script>
+</body>
+
+</html>

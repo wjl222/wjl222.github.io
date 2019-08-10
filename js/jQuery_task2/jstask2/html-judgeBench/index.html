@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+    <script src="../javascript-state-machine.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img id="return" src="./images/return.png">
+            法官台本
+            <img id="close" src="./images/close.png">
+        </div>
+    </nav>
+    <div class="content">
+        <ul class="big_list" id="big_list">
+            <li class="li_box" id="li_box">
+                <div class="day">
+                    第<span class="day_text">一</span>天
+                    <img src="./images/arrow.png">
+                </div>
+                <div class="small_list_container">
+                    <ul class="small_list">
+                        <button class="blue_box" id="killPeople">
+                            杀手杀人
+                            <span class="blue_triangle"></span>
+                            <span class="moon_container"><img class="moon" src="./images/moon.png"></span>
+                        </button>
+                        <li id="blank1" class="blank"></li>
+                        <button class="blue_box" id="undeadSay">
+                            亡灵留下遗言
+                            <span class="blue_triangle"></span>
+                            <sapn class="sun_container"><img class="sun" src="./images/sun.png"></sapn>
+                        </button>
+                        <button class="blue_box" id="everySay">
+                            讨论
+                            <span class="blue_triangle"></span>
+                        </button>
+                        <button class="blue_box" id="vote">
+                            全民投票
+                            <span class="blue_triangle"></span>
+                        </button>
+                        <li id="blank2" class="blank"></li>
+                    </ul>
+                    <img class="white_triangle" src="./images/white_triangle.png">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <footer>
+        <input type="button" value="结束游戏" id="end_game">
+        <input type="button" value="法官日记" id="judge_diary">
+    </footer>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./js/judgeBench.js"></script>
+</body>
+
+</html>

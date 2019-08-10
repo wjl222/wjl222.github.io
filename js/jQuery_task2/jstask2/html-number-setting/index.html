@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img class="return" id="return" src="./images/return.png">
+            <img class="hide" src="./images/question-mark.png">
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <div class="player-ratio">
+                <p class="player-r-txt">玩家配比</p>
+                <ul class="set-and-num">
+                    <li class="ghost">幽灵<p id="ghost">1</p>人</li>
+                    <li class="people">水民<p id="people">3</p>人</li>
+                </ul>
+            </div>
+            <div class="people-word">
+                <p><span>水民词组</span><input type="text" placeholder="限输入10个字内" id="people_word" maxlength="10"></p>
+                <p><span>幽灵词组</span><input type="text" placeholder="限输入10个字内" id="ghost_word" maxlength="10"></p>
+            </div>
+            <div class="player-number">
+                <p>玩家数量
+                    <input type="number" class="number" id="number" value="4" onchange="inputChange()">
+                    人
+                </p>
+                <div class="range">
+                    <img src="./images/设置页面_06.png" onclick="reduce()">
+                    <input oninput="rangeChange()" id="rangeNumber" type="range" value="4" min="4" max="18" step="1">
+                    <img src="./images/设置页面_09.png" onclick="addNumber()">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <button class="licensing" id="licensing" onclick="sumbit ()">
+                去发牌
+            </button>
+        </div>
+
+    </footer>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/htmlNumberSetting.js"></script>
+</body>
+
+</html>

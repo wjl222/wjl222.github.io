@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task-7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+    <script src="../javascript-state-machine.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img src="./images/three-line.png" class="more-option hide">
+            <span id="title">杀手杀人</span>
+            <img src="./images/return.png" class="return-key" id="close">
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="speak_end">
+            <div class="container">
+                <p id="whoKill">杀手请睁眼，选择要杀的人</p>
+                <img src="./images/triangle.png">
+            </div>
+        </div>
+        <div class="container">
+            <p class="select">点击要选的人的头像，后点击投死</p>
+            <ul class="option_line" id="option_line">
+                <li class="option">
+                    <div class="option-text">
+                        <p class="option-identity" id="option-identity">水明</p>
+                        <p class="option-number" id="option-number">a</p>
+                    </div>
+                    <div class="option-img">
+                        <img src="./images/knife.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <button class="vote-die" id="vote_die">
+            投死
+        </button>
+    </footer>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./js/html-killPeople.js"></script>
+</body>
+
+</html>

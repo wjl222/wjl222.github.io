@@ -1,0 +1,245 @@
+html {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 93.75%;
+    margin: auto;
+}
+
+$blueColor : #29bde0;
+$fontSize17: 17px;
+$fontSize20: 20px;
+$whiteColor: #fff;
+
+%positionR {
+    position: relative;
+}
+
+%positionA {
+    position: absolute;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    height: 8vh;
+    width: 100vw;
+    font-size: $fontSize17;
+    color: $whiteColor;
+    background-color: $blueColor;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 93.75%;
+        height: 100%;
+        margin: auto;
+    }
+    img {
+        height: 18px;
+    }
+}
+
+#return {
+    padding-right: 7px;
+}
+
+.content {
+    height: 100%;
+    padding-top: 8vh;
+    padding-bottom: 11.82vh;
+    box-sizing: border-box;
+    background: #f0f0f0;
+
+    ul.big_list {
+        width: 97.34%;
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+.day,
+.small_list {
+    background: $whiteColor;
+}
+
+.big_list::before {
+    content: "";
+    display: table;
+    overflow: hidden;
+}
+
+.day {
+    @extend %positionR;
+    height: 7.82vh;
+    margin-top: 1.64vh;
+    color: $blueColor;
+    line-height: 7.82vh;
+    text-align: center;
+
+    img {
+        @extend %positionA;
+        right: 3.125vw;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 8.5px;
+        width: 15px;
+    }
+}
+
+.small_list_container {
+    @extend %positionR;
+    margin-top: 1.64vh;
+    background: $whiteColor;
+}
+
+.small_list {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 83.3vw;
+    padding: 4.6vh 3.125vw 4.6vh 0;
+    border-left: 2px solid #c9c9c9;
+
+    button:nth-child(1) {
+        margin-top: 0;
+    }
+
+    button {
+        margin-top: 15px;
+        outline: none;
+    }
+}
+
+.lastDay {
+
+    .blue_box {
+        background: #92b7a5;
+    }
+
+    .blue_triangle {
+        border-right: 6px solid #92b7a5;
+    }
+
+}
+
+
+
+.small_list_container:after {
+    content: "";
+    display: table;
+    overflow: hidden;
+    clear: both;
+}
+
+.blue_box {
+    @extend %positionR;
+    width: 72.66vw;
+    height: 6.91vh;
+    font-size: 15px;
+    color: $whiteColor;
+    line-height: 6.91vh;
+    text-align: center;
+    background: #24a7c6;
+}
+
+.blank {
+    width: 72.66vw;
+    height: fit-content;
+}
+
+.blue_triangle {
+    @extend %positionA;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    height: 11px;
+    width: 11px;
+    border-right: 6px solid #24a7c6;
+    border-top: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    box-sizing: border-box;
+}
+
+.white_triangle {
+    @extend %positionA;
+    z-index: 2;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -95%);
+    height: 1.64vh;
+}
+
+.moon {
+    height: 3.2vh;
+}
+
+.sun {
+    @extend .moon;
+}
+
+.moon_container {
+    @extend %positionA;
+    top: 50%;
+    left: -10.65vw;
+    transform: translate(-50%, -50%);
+    width: 3.2vh;
+    height: 3.2vh;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    background-color: $whiteColor;
+}
+
+.sun_container {
+    @extend .moon_container;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 11.82vh;
+    width: 100%;
+    background-color: rgba(41, 189, 224, .7);
+
+    input[type="button"] {
+        width: 42.5%;
+        height: 7.73vh;
+        font-size: $fontSize17;
+        color: $whiteColor;
+        background: #fdbc48;
+        outline: none;
+        border: none;
+        border-radius: 1vh;
+    }
+}
+
+#end_game {
+    margin-right: 4%;
+}
+
+#judge_diary {
+    margin-left: 4%;
+}

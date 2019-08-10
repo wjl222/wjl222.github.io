@@ -1,0 +1,144 @@
+nav,
+.main,
+.footer{
+    min-width: 320px;
+}
+
+html {
+    height: 100%;
+    display: table;
+}
+
+body {
+    display: table-cell;
+    height: 100%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+/*标题部分*/
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 8vh;
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+    background-color: #29bde0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94.1%;
+    margin: auto;  
+    height: 100%;
+}
+
+nav .container img {
+    height: 21px;
+}
+
+button {
+    outline: none;;
+}
+
+/*下面是内容部分*/
+
+.main {
+    width: 100vw;
+    padding-top: 8vh;
+    background-color: #29bde0;
+}
+
+.icon {
+    display: block;
+    height: 18.2vh;
+    margin: 3vh auto 0 auto;
+}
+
+.details {
+    padding:6vh 0 3vh 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.game_result {
+    font-size: 17px;
+}
+
+.surplus_number {
+    padding: 1.5vh 0;
+}
+
+.player_number {
+    padding-bottom: 2vh;
+}
+
+.player_number p {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.play_word p {
+    padding: 1vh 0;
+}
+
+/*下面是回合详情*/
+
+.content_container {
+    width: 78vw;
+    margin: auto;
+}
+
+.rounds-details li {
+    border-bottom: 2px solid #ddd;
+}
+
+.rounds-details {
+    padding-bottom: 11.82vh;
+    box-sizing: border-box;
+}
+
+.rounds-details li .content_container {
+    height: 83px;
+}
+
+.rounds {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.event p{
+    padding-bottom:9px;
+    font-size: 13px;
+    color: #a6a6a6;
+}
+
+/*底部*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    height: 11.82vh;
+    width: 100%;
+    background-color: rgba(41, 189, 224, .7);
+}
+
+footer button {
+    width: 42.5%;
+    height: 7.73vh;
+    border-radius: 1.5vh;
+    color: #fff;
+    font-size: 20px;
+    background-color: #f66f6f;
+}

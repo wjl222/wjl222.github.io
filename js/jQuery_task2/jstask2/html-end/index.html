@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task-7-the-end</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <button id="homepage"><img src="./images-end/homepage.png"></button>
+            <p>游戏结果</p>
+            <img class="hide" src="./images-end/information.png">
+        </div>
+    </nav>
+    <div class="main">
+        <div class="content_container" id="content_container">
+            <img class="icon" src="./images-end/win.png">
+            <div class="details">
+                <p class="game_result">游戏结果：<span id="game_result"></span></p>
+                <p class="surplus_number">剩余人数：</p>
+                <div class="player_number">
+                    <p>幽灵：<span id="ghost_number"></span>人</p>
+                    <p>水民：<span id="people_number"></span>人</p>
+                </div>
+                <div class="play_word">
+                    <p>幽灵词汇：<span id="ghost_word"></span></p>
+                    <p>水民词汇：<span id="people_word"></span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <ul class="rounds-details" id="rounds-details">
+        <li>
+            <div class="content_container">
+                <p class="rounds">第<span class="dayNumber"></span>天</p>
+                <div class="event">
+                    <p class="day"></span>
+                    </p>
+                    <p class="day"></p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <footer>
+        <button id="play-again">
+            再来一局
+        </button>
+    </footer>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./js/html-end.js"></script>
+</body>
+
+</html>
