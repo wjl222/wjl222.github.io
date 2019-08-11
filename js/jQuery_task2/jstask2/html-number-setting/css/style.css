@@ -69,6 +69,7 @@ nav div {
 
 .set-and-num {
   display: flex;
+  align-items: center;
   float: left;
   width: 100%;
   height: 84.2%;
@@ -78,30 +79,24 @@ nav div {
 .set-and-num li {
   width: 50%;
   height: .35rem;
-  margin-top: .12rem;
-  padding-left: .6712rem;
   line-height: .35rem;
   font-size: .13rem;
   color: #a1a1a1;
+  text-align: center;
 }
 
 .set-and-num li p {
   display: inline-block;
 }
 
-.ghost {
-  background: url(../images/photo-1.png) no-repeat;
-}
-
-.people {
-  background: url(../images/photo-2.png) no-repeat;
+.set-and-num li img {
+  width: 35px;
+  padding-right: 20px;
 }
 
 .ghost,
 .people {
   list-style-image: none;
-  background-size: .35rem;
-  background-position-x: .2212rem;
 }
 
 .people-word {
@@ -176,8 +171,11 @@ input::-webkit-inner-spin-button {
 input[type=range] {
   width: 63.6%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 10px;
   margin: 40.5px 5px 0 5px;
+  background: -webkit-linear-gradient(#fab344, #fab344) no-repeat, #ddd;
+  background-size: 0%,100%;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -194,7 +192,6 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
   height: 3px;
-  background-color: #fab344;
 }
 
 footer {

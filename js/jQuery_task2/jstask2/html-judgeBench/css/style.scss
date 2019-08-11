@@ -76,8 +76,9 @@ nav {
 }
 
 .day,
-.small_list {
+.small_list_container {
     background: $whiteColor;
+    box-shadow: 0 0 7px rgb(209, 209, 209);
 }
 
 .big_list::before {

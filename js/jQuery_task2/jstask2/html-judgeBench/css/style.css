@@ -71,8 +71,9 @@ nav img {
 }
 
 .day,
-.small_list {
+.small_list_container {
   background: #fff;
+  box-shadow: 0 0 7px #d1d1d1;
 }
 
 .big_list::before {

@@ -17,7 +17,9 @@ var play = JSON.parse(sessionStorage.getItem("player")), //获取设置人数也
     if (whoBeKilled != null) {//如果被杀的人的数组不为空，则将被杀的人的背景改了；
         $(".option").each(function (i) {
             if (whoBeKilled.indexOf(i) !== -1) {
-                $(this).find('.option-identity').css('backgroundColor', '#92b7a5');
+                $(this).find('.option-identity').css('backgroundColor', '#999');
+                $(this).find('.option-number').css('backgroundColor', '#999');
+                $(this).css("color","#fff");
             }
         })
     }

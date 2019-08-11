@@ -44,9 +44,10 @@ $("#close").click(function () {  //返回键；
 
     if (whoBeKilled != null) {//如果被杀的人的数组不为空，则将被杀的人的背景改了；
         $(".option").each(function (i) {
-
             if (whoBeKilled.indexOf(i) !== -1) {//如果已经被杀；则改变其背景色；和取消他的点击图片显示；
-                $(this).find('.option-identity').css('backgroundColor', '#92b7a5');
+                $(this).find('.option-identity').css('backgroundColor', '#999');
+                $(this).find('.option-number').css('backgroundColor', '#999');
+                $(this).css("color","#fff");
                 $(this).hover(function () {
                     $(this).find(".option-img").css("opacity", "0");
                 }
