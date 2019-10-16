@@ -8,7 +8,9 @@ var picture_container = document.getElementsByClassName('picture-container')[0],
     spot_ul = document.getElementById('spot'),
     spot_li = spot_ul.children,
     index = 0,
-    animated = false;
+    animated = false,
+    timed;
+
 
 window.onload = function () {
     rotationed();
@@ -30,7 +32,7 @@ window.onresize = function () {//监控浏览器大小变化时的轮播图大�
 }
 
 document.addEventListener('visibilitychange',function() {//当用户切换出去时停止轮播，用户在此进入时开始；
-    if (document.hidden) {
+    if (!document.hidden) {
         stop();
     } else {
         rotationed();
