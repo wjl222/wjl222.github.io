@@ -20,7 +20,6 @@ window.onload = function () {
 
 };
 
-
 window.onresize = function () {//监控浏览器大小变化时的轮播图大小变化；
     banner_picture.style.height = (picture[0].offsetWidth * 0.3125) + 'px';//因为设置了绝对定位，其夫元素高度无法设置，用js设置较为方便
     for (var i = 0; i < picture.length; i++) {
@@ -29,6 +28,14 @@ window.onresize = function () {//监控浏览器大小变化时的轮播图大�
     picture_container.style.left = offsetTime * picture_container.children[0].offsetWidth + 'px';//宽度缩小时，因为下方的位移距离是按照宽度设置；所以在位移时将其同步；
     picture_w = picture_container.children[0].offsetWidth;//同步变量值
 }
+
+document.addEventListener('visibilitychange',function() {//当用户切换出去时停止轮播，用户在此进入时开始；
+    if (document.hidden) {
+        stop();
+    } else {
+        rotationed();
+    }
+})
 
 function rotationed() {
     timed = setInterval(function () {
