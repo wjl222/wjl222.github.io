@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+
+</head>
+
+<body>
+    <input type="number" id="box1">
+    <select id="select">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input type="number" id="box2">
+    <input type="submit" id="submit" value="提交" onclick="submit()">
+    <input type="number" id="result">
+    <script type="text/javascript">
+        function submit() {
+            var box1 = document.getElementById("box1");
+            var box2 = document.getElementById("box2");
+            var select = document.getElementById("select").value;
+            var result = document.getElementById("result");
+            switch (select) {
+                case "+":
+                    result.value = parseInt(box1.value) + parseInt(box2.value);
+                    break;
+                case "-":
+                    result.value = parseInt(box1.value) - parseInt(box2.value);
+                    break;
+                case "*":
+                    result.value = parseInt(box1.value) * parseInt(box2.value);
+                    break;
+                case "/":
+                    result.value = parseInt(box1.value) / parseInt(box2.value);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+html {
+  font-size: 625%;
+  min-width: 320px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: .43rem;
+  width: 100vw;
+  background: #5fc0cd;
+  box-sizing: border-box;
+  padding: 0 .17rem;
+}
+
+.return-key {
+  height: .175rem;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.title {
+  font-size: 0.18rem;
+  color: #fff;
+}
+
+/*头部设置结束*/
+.content {
+  padding-top: .43rem;
+  padding-bottom: .64rem;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.personal-information:after, .main .line:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.personal-information {
+  height: 1.63rem;
+  background: url(../images/background-image.png) no-repeat right/100vw 51vw;
+}
+
+.photo {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 1rem;
+}
+
+.photo img {
+  height: .845rem;
+}
+
+.personal-information-text {
+  float: left;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 1.2rem;
+  padding-left: .19rem;
+  font-size: 0.18rem;
+  color: #fff;
+}
+
+.personal-information-text span {
+  display: inline-block;
+  height: .285rem;
+  font-size: .14rem;
+}
+
+.address {
+  font-size: .12rem;
+}
+
+.address img {
+  padding-right: .075rem;
+}
+
+.main {
+  font-size: 16px;
+}
+
+.main .line {
+  padding-left: .15rem;
+  border-bottom: 1px solid #e1e5e7;
+  box-sizing: border-box;
+}
+
+.porfessional-skill,
+.live-home,
+.board-and-lodging,
+.table-subject,
+.table-content {
+  float: left;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: .165rem;
+  padding-bottom: .165rem;
+  width: fit-content;
+}
+
+.porfessional-skill {
+  display: inline-block;
+  font-weight: 500;
+  padding: 0 0 0 .125rem;
+  margin: .165rem 0;
+  border-left: 0.015rem solid #5fc0cd;
+}
+
+.board-and-lodging img {
+  width: .115rem;
+  padding-right: .045rem;
+}
+
+.table-subject, .board-and-lodging {
+  padding-left: .15rem;
+}
+
+.table-subject {
+  color: #999;
+}
+
+.table-content {
+  width: 60%;
+  padding-left: .14rem;
+}
+
+.price {
+  color: #e26163;
+}
+
+.self-introduction {
+  font-size: .14rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: .64rem;
+  width: 100vw;
+  background: #fff;
+}
+
+.footer button {
+  height: .44rem;
+  width: 43.1%;
+  margin: 0 1.74%;
+  font-size: .17rem;
+  border: 1px solid #5fc0cd;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.message {
+  color: #5fc0cd;
+}
+
+.phone-connection {
+  color: #fff;
+  background: #5fc0cd;
+}

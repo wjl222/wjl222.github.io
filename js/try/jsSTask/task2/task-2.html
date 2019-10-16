@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./btn_1.css">
+    <style type="text/css">
+        ul,
+        div {
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .pots_line {
+            width: 468px;
+        }
+
+        ul li {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            list-style: none;
+            background: #bbb;
+        }
+
+        #link_line {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            display: inline-block;
+            flex-shrink: 0;
+            width: 60px;
+            height: 20px;
+            padding: 2px 7px;
+            margin-right: 2px;
+            margin-left: 2px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>切换主题练习</p>
+    <ul class="pots_line">
+        <li id="btn_1" class="active"></li>
+        <li id="btn_2"></li>
+        <li id="btn_3"></li>
+    </ul>
+    <div id="link_line">
+        <a href="#">新闻</a>
+        <a href="#">娱乐</a>
+        <a href="#">体育</a>
+        <a href="#">音乐</a>
+        <a href="#">电影</a>
+        <a href="#">旅游</a>
+    </div>
+
+    <script type="text/javascript">
+        var aA = document.getElementsByTagName('a'),
+            li = document.getElementsByTagName('li'),
+            links = document.getElementsByTagName('link');
+        window.onload = function () {
+            for (var i = 0; i < li.length; i++) {
+                li[i].onclick = function () {
+                    var xxx;
+                    for (xxx in li) {
+                        li[xxx].className = '';
+                    }
+                    this.className = 'active';
+                    links[0].href = './' + this.id + '.css';
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

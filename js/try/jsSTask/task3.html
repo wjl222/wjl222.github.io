@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        p {
+            text-align: center;
+        }
+
+        ul {
+            width: fit-content;
+            margin: auto;
+            padding: 0;
+        }
+
+        ul::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .bUl>li {
+            float: left;
+            width: 40px;
+            height: 30px;
+            margin: 0 5px;
+            text-align: center;
+            background: #bbb;
+            line-height: 30px;
+            list-style: none;
+        }
+
+        .sUl {
+            display: none;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sUl>li {
+            width: 40px;
+            height: 30px;
+            margin-top: 2px;
+            text-align: center;
+            line-height: 30px;
+            list-style: none;
+            background: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <p>下拉菜单练习</p>
+    <ul class="bUl">
+        <li class='aaa'>
+            a
+            <ul class="sUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li class='aaa'>
+            b
+            <ul class="sUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li class='aaa'>
+            c
+            <ul class="sUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li class='aaa'>
+            d
+            <ul class="sUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+        <li class='aaa'>
+            e
+            <ul class="sUl">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        var aaa = document.getElementsByClassName('aaa'),
+            html = document.getElementsByTagName('html');
+
+        window.onload = function () {
+            var m,n;
+            for(m = 0;m < aaa.length;m++) {
+                aaa[m].onmouseover = function () {
+                this.children[0].setAttribute('style', 'display:block;');
+            }
+
+            aaa[m].onmouseleave = function () {
+                this.children[0].setAttribute('style', 'display:none;');
+            }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

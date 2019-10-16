@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    function shuffle(a) {
+        var b = [];
+        while(a.length) {
+            var index = ~~(Math.random()*a.length);
+            b.push(a[index]);
+            a.splice(index,1)
+        }
+        return b;
+    }
+    var aa = [1,2,3,4,5,6,7];
+    console.log(shuffle(aa));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

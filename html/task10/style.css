@@ -1,67 +1,29 @@
-/*总的设置开始*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    background: transparent;
-    outline: none;
-    border: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 .container {
     width: 1200px;
     margin: auto;
 }
 
-/*总的设置结束*/
-
-/*头部开始*/
-
+html {
+    min-width: 930px;
+}
 /*联系方式开始*/
-
 .contact-information {
     height: 40px;
     background: #1d7ad9;
 }
 
 .contact-information .container {
-    height: 100%;
-    color: #fff;
-}
-
-.contact-information .container p {
-    float: left;
+    display: flex;
+    justify-content: space-between;
     line-height: 40px;
-}
-
-.sign-in-and-register {
-    float: right;
+    color: #fff;
 }
 
 .sign-in-and-register a {
     display: inline-block;
-    height: 40px;
-    vertical-align: middle;
-    color: #fff;
-    line-height: 40px;
-    text-align: center;
-}
-
-.sign-in-and-register a:nth-child(1) {
     width: 60px;
-}
-
-.sign-in-and-register a:nth-child(1):hover {
-    width: 104px;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    text-align: center;
 }
 
 .sign-in-and-register a:nth-child(2) {
@@ -69,25 +31,25 @@ a {
     color: #000;
     background: #fff;
 }
-
 /*联系方式结束*/
 
 /*头部选项开始*/
 
 nav {
-    position: relative;
     height: 100px;
     background: #f9f9f9;
 }
-
-nav .container::after {
+/*清除浮动*/
+nav .container::after,
+.customization-steps .container::after,
+.option-line::after,
+footer .container::after {
     content: "";
     display: block;
     clear: both;
 }
 
 .nav-box {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,42 +63,29 @@ nav .container::after {
     color: #fff;
 }
 
-.blank img {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(0, -50%);
-    height: 45px;
+.nav-box button {
+    height: 47px;
+    padding: 0 17px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px #e6e6e6;
 }
 
+.radio,
 .nav-box button:nth-child(1) {
     color: #fff;
     background: #1d7ad9;
     box-shadow: none;
 }
 
-.nav-box button {
-    height: 47px;
-    padding: 0 17px;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 1px 1px 1px #e6e6e6;
-}
-
 .nav-box button:hover {
+    box-shadow: none;
     background: #1d7ad9;
 }
 
 /*头部选项结束*/
 
 /*步骤切换图标开始*/
-
-.customization-steps .container::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 .steps-line {
     display: flex;
@@ -189,12 +138,9 @@ nav .container::after {
 .steps-line .step:nth-child(1) .step-text {
     color: #ff7f02;
 }
-
 /*步骤切换图标切换结束*/
-
 /*表格开始*/
-
-form {
+.form {
     width: 100%;
     border: 1px solid #e8e8e8;
     box-sizing: border-box;
@@ -202,23 +148,13 @@ form {
 }
 
 .form-top-text {
-    display: inline-block;
-    height: 37px;
-    width: 100%;
+    margin-bottom: 12px;
+    padding-left: 5px;;
     font-size: 22px;
-    line-height: 22px;
+    border-left: 4px solid #1d7ad9;
 }
 
 /*表格头部的文字左边的小竖线设置*/
-.form-top-text span {
-    display: inline-block;
-    width: 4px;
-    height: 21px;
-    margin-right: 4px;
-    vertical-align: top;
-    background: #1d7ad9;
-}
-
 
 /*表格上方选项的文字信息设置开始*/
 .title-of-option {
@@ -245,12 +181,14 @@ form {
 
 .option .option-container {
     display: flex;
-    align-content: center;
+    align-content: space-around;
     flex-wrap: wrap;
     width: 80%;
 }
 
 .option .option-container .option-line {
+    display: flex;
+    align-items: center;
     width: 100%;
     padding-left: 3.083%;
     box-sizing: border-box;
@@ -270,27 +208,22 @@ form {
     height: 39px;
     width: 129px;
     padding-left: 17px;
-    margin-right: 17px;
-    background: url(./images/定制箱_下拉.png) no-repeat 100px 50%;
+    background: url(./images/noChecked.png) no-repeat 100px 50%;
     color: #999;
-    outline: none;
     border: 1px solid #e8e8e8;
     box-sizing: border-box;
 }
 
-.option .option-line span {
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 5%;
+ .option-line span {
+    margin-left: 10px;
     box-sizing: border-box;
-    color: #666;
+   
 }
 
-.option-line::after {
-    content: "";
-    display: block;
-    clear: both;
+.option-line span label {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #666;
 }
 
 .option-container {
@@ -302,28 +235,27 @@ div.option-container#box-type {
     height: 100px;
 }
 
-div.option-container#diameter,
-div.option-container#material {
+div.option-container {
     height: 141px;
 }
 
 /*更换单选前的图标开始*/
 
-input[type="radio"].radio {
+input[type="radio"] {
     display: none;
     /*隐藏原有的图标*/
 }
 
 label.radio {
     display: inline-block;
-    background: url(./images/定制箱-未点击的单选.png) no-repeat;
+    background: url(./images/noChecked.png) no-repeat;
     padding-left: 35px;
     height: 18px;
     line-height: 18px;
 }
 
-input[type="radio"].radio:checked+.radio {
-    background: url(./images/定制箱-点击后的单选.png) no-repeat;
+input[type="radio"]:checked + .radio {
+    background: url(./images/checked.png) no-repeat;
 }
 
 /*更换单选前的图标结束*/
@@ -335,6 +267,7 @@ input[type="number"] {
     height: 30px;
     margin-left: 10px;
     margin-right: 4px;
+    text-align: center;
     outline: none;
     border: 1px solid #e8e8e8;
     box-sizing: border-box;
@@ -344,36 +277,27 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+/* 清除上下两个按键 */
 
 /*设置数字选项结束*/
 
 /*下一步选项的设置开始*/
 
-.next-step {
-    position: relative;
+.next-step-container {
     height: 287px;
-    box-sizing: border-box;
+    line-height: 287px;
+    text-align: center;
     border-top: 1px solid #e7e7e7;
 }
 
-.next-step input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.next-step {
     height: 46px;
     width: 147px;
+    margin: auto;
     color: #fff;
     font-size: 22px;
-    outline: none;
-    border: none;
     background: #e15053;
 }
-
-/*下一步选项的设置结束*/
-
-/*表单结束*/
-
 /*底部开始*/
 
 footer {
@@ -384,29 +308,21 @@ footer {
     background: #f9f9f9;
 }
 
-footer .container::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-footer .container>div {
-    float: left;
-
+footer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .propaganda-slogan {
     width: 39.5%;
-    height: 147px;
+
 }
 
 .link {
     width: 30%;
-    height: 147px;
 }
 
 .propaganda-slogan {
-    display: inline-block;
     font-size: 18px;
 }
 
@@ -420,10 +336,10 @@ footer .container>div {
 
 .qq-phone-number-wechat {
     width: 30.5%;
-    height: 147px;
 }
 
 .qq-phone-number-wechat div {
+    float: left;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -431,9 +347,8 @@ footer .container>div {
     height: 80px;
 }
 
-.qq-phone-number-wechat div,
 .qq-phone-number-wechat img {
-    float: right;
+    display: inline-block;
 }
 
 /*底部结束*/
@@ -460,11 +375,6 @@ footer .container>div {
         width: 900px;
     }
 
-    nav,
-    nav .container,
-    .nav-box {
-        height: 80px;
-    }
 }
 
 @media screen and (max-width:930px) {
@@ -472,14 +382,16 @@ footer .container>div {
         width: 600px;
     }
 
-    nav,
-    nav .container,
-    .nav-box {
-        height: 80px;
+    .option .option-container .option-line {
+        width: 416px;
+        height: fit-content;
+        padding-left: 0;
+        margin: auto;
+        text-align: center;
     }
 
-    .option .option-line {
-        width: 416px;
+    .option .option-container .option-line span {
+        margin: auto;
     }
 
     .steps-line {
@@ -487,7 +399,7 @@ footer .container>div {
     }
 
     div.option-container#diameter {
-        height: 220px;
+        height: fit-content;
     }
 
     .option {
@@ -508,7 +420,9 @@ footer .container>div {
         transform: translate(-50%, -50%);
     }
 
-    .propaganda-slogan {
+    /* 将介绍语去掉 */
+    
+    .propaganda-slogan { 
         display: none;
     }
 
@@ -524,85 +438,6 @@ footer .container>div {
 
     .version-number .container {
         padding: 0;
-    }
-
-}
-
-@media screen and (max-width:600px) {
-
-    .container,
-    .nav-box,
-    .step,
-    .link,
-    .qq-phone-number-wechat,
-    .step,
-    .nav-box button,
-    .option .option-container .option-line span,
-    .blank  {
-        width: 100vw;
-    }
-    
-    nav .container:hover button {
-        display: block;
-    }
-
-    .blank {
-        content: "";
-        display: block;
-        height: 80px;
-        background: #1d7ad9;
-    }
-
-    .blank img {
-        display: inline-block;
-    }
-
-    .steps-line {
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-    }
-
-    .nav-box {
-        flex-wrap: wrap;
-    }
-
-    .nav-box button {
-        display: none;
-        float: left;
-        height: 80px;
-        border-radius: 0;
-    }
-
-    .form-top-text {
-        word-wrap: break-word;
-    }
-
-    div.option-container#diameter,
-    div.option-container#material,
-    div.option-container#box-type,
-    .form-top-text,
-    .link,
-    .qq-phone-number-wechat,
-    .form-top-text,
-    nav,
-    .nav-box,
-    .steps-line  {
-        height: fit-content;
-    }
-
-    .link,
-    .qq-phone-number-wechat {
-        padding-top: 20px;
-    }
-
-    .qq-phone-number-wechat div,
-    .qq-phone-number-wechat img {
-        float: left;
-    }
-
-    .version-number,
-    .contact-information .container p {
-        display: none;
     }
 
 }

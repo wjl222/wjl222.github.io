@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>逆转数字并且输出汉字形式</title>
+</head>
+
+<body>
+    <!-- <p>请输入一组数字，点击提交后逆转并以汉字输出</p> -->
+    <!-- <input type="number" id="number">
+    <input type="submit" value="提交" id="submit">
+    <input type="text" id="result"> -->
+    <script type="text/javascript">
+        
+        
+        window.onload =  function switc() {
+            var a = window.prompt("input");
+            var num = "";
+            for (i = a.length - 1; i >= 0; i--) {
+                num += aa(a[i]);
+            }
+            document.write(num);
+        }
+
+        function aa(number) {
+            switch(number) {
+                case "1":
+                return "壹";
+                case "2":
+                return "贰";
+                case "3":
+                return "叁";
+                case "4":
+                return "肆";
+                case "5":
+                return "伍";
+                case "6":
+                return "六";
+                case "7":
+                return "七";
+                case "8":
+                return "捌";
+                case "9":
+                return "九";
+            }
+        }
+    </script>
+</body>
+
+</html>

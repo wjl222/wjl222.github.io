@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    function voice() {
+        var select = document.getElementById("select").value;
+        switch (select) {
+            case "小猫":
+            alert("喵喵");
+            break;
+            case "小狗":
+            alert("汪汪");
+            break;
+            case "小鸡":
+            alert("jiji");
+            break;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <p>选择你想知道叫声的小动物并提交</p>
+    <select id="select">
+        <option>小鸡</option>
+        <option>小猫</option>
+        <option>小狗</option>
+    </select>
+    <input type="submit" value="提交" onclick="voice()">
+</body>
+
+</html>

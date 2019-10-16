@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="widtd=wditd, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css">
     <title>task10</title>
 </head>
 
@@ -22,7 +21,6 @@
     <div class="content">
         <nav>
             <div class="container">
-                <div class="blank"><img src="http://wjl222.github.io/html/task10/images/下拉列表图标.png"></div>
                 <div class="nav-box">
                     <button>首页</button>
                     <button>在线定制</button>
@@ -35,33 +33,30 @@
             <div class="container">
                 <div class="steps-line">
                     <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-text">1.定制纸箱</div>
+                        <p class="step-number">1</p>
+                        <p class="step-text">1.定制纸箱</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-text">2.选择数量</div>
+                        <p class="step-number">2</p>
+                        <p class="step-text">2.选择数量</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-text">3.上传附件</div>
+                        <p class="step-number">3</p>
+                        <p class="step-text">3.上传附件</p>
                     </div>
                     <div class="step">
-                        <div class="step-number">4</div>
-                        <div class="step-text">4.确认下单</div>
+                        <p class="step-number">4</p>
+                        <p class="step-text">4.确认下单</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="from-box">
             <div class="container">
-                <p class="form-top-text"><span></span>请按照以下步骤来定制您的纸箱</p>
-                <form action="" method="GET">
-                    <div class="title-of-option">
-                        <img src="http://wjl222.github.io/html/task10/images/定制箱_07.png">选择箱型
-                    </div>
+                <p class="form-top-text">请按照以下步骤来定制您的纸箱</p>
+                <div class="form">
+                    <div class="title-of-option"><img src="./images/box_type.png">选择箱型</div>
                     <div class="option">
                         <div class="option-container" id="box-type">
                             <div class="option-line">
@@ -87,17 +82,14 @@
                                 <option value="3">3</option>
                             </select>
                         </div>
-                    </div class="option">
-                    <div class="title-of-option">
-                        <img src="http://wjl222.github.io/html/task10/images/定制箱_14.png">确定尺寸
                     </div>
-
+                    <div class="title-of-option"><img src="./images/box_size.png">确定尺寸</div>
                     <div class="option">
                         <div class="option-container" id="diameter">
                             <div class="option-line">
                                 <span>
                                     <input name="diameter" type="radio" id="outer-diameter" class="radio"><label
-                                        for="outer-diameter" class="radio">外径</label>
+                                        for="outer-diameter" class="radio">内径</label>
                                 </span>
                                 <span>长<input type="number" min="1">mm</span>
                                 <span>宽<input type="number" min="1">mm</span>
@@ -122,9 +114,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="title-of-option">
-                        <img src="http://wjl222.github.io/html/task10/images/定制箱_07.png">选择材质
-                    </div>
+                    <div class="title-of-option"><img src="./images/box_material.png">选择材质</div>
                     <div class="option">
                         <div class="option-container" id="material">
                             <div class="option-line">
@@ -158,11 +148,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="next-step">
-                        <input type="submit" value="下一步">
-                    </div>
-
-                </form>
+                    <div class="next-step-container">
+                        <button class="next-step">下一步</button>
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
@@ -183,7 +172,7 @@
                 </div>
             </div>
             <div class="qq-phone-number-wechat">
-                <img src="http://wjl222.github.io/html/task10/images/定制箱_22.png">
+                <img src="./images/QR_code.png">
                 <div>
                     <p>TEL : 400-0000-000</p>
                     <p>企业QQ : 123456789</p>

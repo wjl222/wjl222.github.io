@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        #box {
+            width: fit-content;
+            margin: auto;
+        }
+
+        button {
+            display: inline-block;
+        }
+
+        #change-box {
+            width: 100px;
+            height: 100px;
+            margin: 30px auto;
+            background: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <button id="add-width">变宽</button>
+        <button id="add-height">变高</button>
+        <button id="change-color">变色</button>
+        <button id="none">隐藏</button>
+        <button id="reset">重置</button>
+    </div>
+    <div id="change-box"></div>
+
+    <script type="text/javascript">
+        var addWidth = document.getElementById("add-width"),
+            addHeight = document.getElementById("add-height"),
+            changeColor = document.getElementById("change-color"),
+            none = document.getElementById("none"),
+            reset = document.getElementById("reset"),
+            changeBox = document.getElementById("change-box");
+
+        addWidth.onclick = function () {
+            var changeBoxWidth;
+            if (changeBox.offsetWidth < 200) {
+                changeBoxWidth = changeBox.offsetWidth + 100;
+                changeBox.style.width = changeBoxWidth + 'px';
+            }
+        }
+
+        addHeight.onclick = function () {
+            var changeBoxHeight;
+            if (changeBox.offsetHeight < 200) {
+                changeBoxHeight = changeBox.offsetHeight + 100;
+                changeBox.style.height = changeBoxHeight + 'px';
+            }
+        }
+
+        changeColor.onclick = function () {
+            changeBox.style.background = 'red';
+        }
+
+        none.onclick = function () {
+            changeBox.style.display = 'none';
+        }
+
+        reset.onclick = function () {
+            changeBox.setAttribute('style','widht:100px;height:100px;background:#bbb;display:block')
+        }
+    </script>
+</body>
+
+</html>

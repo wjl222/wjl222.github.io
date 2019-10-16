@@ -12,14 +12,10 @@
 
 /*下面是按键的样式*/
 
-.return-key {
+#return-key {
     position: fixed;/*将返回键固定在最上面*/
     top: 0;
-    height: 37px;
-}
-
-.return-key img {
-    width:27px;
+    height: 30px;
     padding: 10px 0 0 15.5px;
 }
 

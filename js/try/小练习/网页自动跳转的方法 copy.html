@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    这是一个网页
+    <div id="a">函数括号那回事</div>
+    <input id="ip" type="button" value="点击变色">
+    <script type="text/javascript">
+        function cc() {
+            var a = document.getElementById("a");
+            a.style.color = "red";
+        }
+        function change() {
+            var ip = document.getElementById("ip");
+            ip.onclick=cc;   //正常绑定事件，onclick触发执行
+            // ip.onclick = cc();   //调用cc,直接执行
+        }
+        change();  //调用change,直接执行
+    </script>
+
+    </script>
+</body>
+
+</html>
