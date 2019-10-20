@@ -1,0 +1,132 @@
+html {
+    min-width: 1000px;
+}
+
+header {
+    height: 600px;
+    background: cornflowerblue;
+}
+
+h1 {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 600px;
+}
+
+#test_container,
+#img_container {
+    width: 1000px;
+    margin: auto;
+}
+
+.test_item {
+    position: relative;
+    height: 200px;
+    padding: 5px 30px;
+    margin: 40px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.test_name {
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.test_name:hover {
+    color: cornflowerblue;
+}
+
+.introduce {
+    margin-top: 20px;
+    text-indent: 32px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+    color: #bbb;
+}
+
+.link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    text-align: right;
+    line-height: 40px;
+    padding: 10px 0;
+}
+
+.link a {
+    margin: 0 10px;
+}
+
+.tip {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.link_number {
+    margin-right: 10px;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+#img_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* #img_container div {
+    position: relative;
+} */
+
+.img_item {
+    width: 50px;
+    margin: 0 5px;
+}
+
+#phonenumber_div,
+#wechat_photo_div {
+    position: relative;
+}
+
+#phonenumber,
+#wechat_photo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#wechat_photo {
+    height: 120px;
+    margin-top: -120px;
+}
+
+#phonenumber {
+    height: 80px;
+    margin-top: -80px
+}
+
+#phonenumber_div:hover #phonenumber {
+    display: inline-block;
+}
+
+#wechat_photo_div:hover #wechat_photo {
+    display: inline-block;
+}

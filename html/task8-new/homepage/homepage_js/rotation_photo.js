@@ -9,7 +9,8 @@ var picture_container = document.getElementsByClassName('picture-container')[0],
     spot_li = spot_ul.children,
     index = 0,
     animated = false,
-    timed;
+    timed,
+    img = picture_container.children;
 
 
 window.onload = function () {
@@ -87,17 +88,21 @@ function animate(num) {//动画函数，传入的值是要位移的距离；
 
 for (let i = 0; i < spot_li.length; i++) {//每个小点添加点击事件；
     spot_li[i].onclick = function () {
+        
         if (this.className === 'active') {//取消重复点击次数；
             return;
         }
+
         if (animated == false) {//当动画在运动时，小点无法点击；
             var x = (-offsetTime) - (i + 1);//现有的位置减去小点目标的位置；
             index = i;
             showSpot(i);//同步下方小点；
             //x是现在所处的位置减去点击的小点所处的位置的大小；也就是要移动的页面数量
-            console.log(-offsetTime);
-            animate(x * picture_w);//位移的距离；
+            animate(x * picture_w);//位移的距离
         }
+
+        //除了当前和目标的，其他都隐藏；
+
     }
 }
 
@@ -113,7 +118,7 @@ rotation_chart_right.onclick = function () {//按键往右
     } else {
         return;
     }
-}
+};
 
 rotation_chart_left.onclick = function () {//按键往左
     if (!animated) {
@@ -126,7 +131,9 @@ rotation_chart_left.onclick = function () {//按键往左
     } else {
         return;
     }
-}
+};
 
-banner_picture.onmouseover = stop;
+banner_picture.onmouseover = function() {
+    clearInterval(timed)
+};
 banner_picture.onmouseout = rotationed;
