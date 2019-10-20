@@ -85,14 +85,14 @@ $("#add").click(function () {//加
     $("#rangeNumberChange").val(
         +$("#rangeNumberChange").val() + 1
     ); //滑轮的值是字符串，先将字符串转换为数字，点击时滑轮的值发生改变
-    rangeNumberChange()//实现同步；
+    rangeNumberColor()//实现同步；
 });
 
 $("#reduce").click(function () {//减
     $("#rangeNumberChange").val(
         +$("#rangeNumberChange").val() - 1
     ); //滑轮的值是字符串，先将字符串转换为数字，点击时滑轮的值发生改变
-    rangeNumberChange()
+    rangeNumberColor()
 
 });
 
