@@ -85,6 +85,7 @@ function sumbit() {
 function rangeChange() {
     inputNumber.value = rangeNumber.value;//在滑轮的值发生改变是，将滑轮的值赋给输入框的值
     p();//运行改变上方数字的值，实现同步。
+    rangeNumberColor();
 }
 
 function inputChange() {
@@ -100,4 +101,10 @@ function addNumber() {//加
 function reduce() {//减
     rangeNumber.value--;
     rangeChange();
+}
+
+function rangeNumberColor() {
+    var rangeNumberVal = document.getElementById('rangeNumber').value;
+    var rangeNumber100 = (rangeNumberVal - 4) / 14 * 100;
+    rangeNumber.style.backgroundSize = rangeNumber100 + '%';
 }

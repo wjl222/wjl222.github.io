@@ -180,7 +180,12 @@ input[type=range] {
     width: 63.6%;
     -webkit-appearance: none;
     border-radius: 10px;
-    margin: 40.5px 5px 0 5px;;
+    margin: 40.5px 5px 0 5px;
+    background: -webkit-linear-gradient(#fab344, #fab344) no-repeat,#ddd;
+}
+
+#rangeNumber {
+    background-size: 0%;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -188,14 +193,15 @@ input[type=range]::-webkit-slider-thumb {
     height: 18px;
     width: 30px;
     margin-top: -7.5px; /*使滑块超出轨道部分的偏移量相等*/
-    background: #ffffff; 
+    background: #ffffff;
     border: solid 0.125em #fab344; /*设置边框*/
     border-radius: 5px;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
     height: 3px;
-    background-color: #fab344;
+
+    // background-color: #fab344;
 }
 
  footer {
