@@ -9,6 +9,10 @@ body {
   margin: auto;
 }
 
+.hide {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -91,6 +95,10 @@ nav img {
   margin-top: 2.82vh;
   font-size: 0.2rem;
   color: #29bde0;
+}
+
+#identity {
+  display: none;
 }
 
 .phrase {

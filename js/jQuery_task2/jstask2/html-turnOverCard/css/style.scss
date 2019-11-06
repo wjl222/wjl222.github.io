@@ -9,6 +9,10 @@ body {
     margin: auto;
 }
 
+.hide {
+    display: none;
+}
+
 $blueColor : #29bde0;
 $fontSize17: .17rem;
 $fontSize20: .2rem;
@@ -95,6 +99,9 @@ nav {
     margin-top: 2.82vh;
     font-size: $fontSize20;
     color: $blueColor;
+}
+#identity {
+    display: none;
 }
 
 .phrase {
