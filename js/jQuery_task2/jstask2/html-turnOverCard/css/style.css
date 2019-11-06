@@ -14,7 +14,7 @@ nav {
   top: 0;
   height: 8vh;
   width: 100vw;
-  font-size: 17px;
+  font-size: 0.17rem;
   color: #fff;
   background-color: #29bde0;
 }
@@ -45,7 +45,7 @@ nav img {
   top: -18.75px;
   height: 37.5px;
   width: 37.5px;
-  font-size: 20px;
+  font-size: 0.2rem;
   color: #f56b81;
   line-height: 30px;
   text-align: center;
@@ -89,13 +89,13 @@ nav img {
 
 .role {
   margin-top: 2.82vh;
-  font-size: 20px;
+  font-size: 0.2rem;
   color: #29bde0;
 }
 
 .phrase {
   margin-top: 2vh;
-  font-size: 20px;
+  font-size: 0.2rem;
   color: #f56b81;
 }
 
@@ -104,7 +104,7 @@ nav img {
   margin: 6vh auto 0 auto;
   line-height: 1.5;
   text-align: left;
-  font-size: 13px;
+  font-size: .13rem;
   color: #fbb435;
 }
 
@@ -125,7 +125,7 @@ footer {
 footer button {
   width: 76.2%;
   height: 7.82vh;
-  font-size: 20px;
+  font-size: 0.2rem;
   color: #fff;
   background: #fbb435;
 }

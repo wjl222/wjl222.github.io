@@ -33,7 +33,7 @@ nav {
   z-index: 3;
   height: 8vh;
   width: 100vw;
-  font-size: 17px;
+  font-size: 0.17rem;
   color: #fff;
   background-color: #29bde0;
 }
@@ -67,7 +67,7 @@ nav img {
 .content ul.big_list {
   width: 97.34%;
   margin: auto;
-  font-size: 15px;
+  font-size: 0.15rem;
 }
 
 .day,
@@ -140,7 +140,7 @@ nav img {
 .blue_box {
   width: 72.66vw;
   height: 6.91vh;
-  font-size: 15px;
+  font-size: 0.15rem;
   color: #fff;
   line-height: 6.91vh;
   text-align: center;
@@ -204,7 +204,7 @@ footer {
 footer input[type="button"] {
   width: 42.5%;
   height: 7.73vh;
-  font-size: 17px;
+  font-size: 0.17rem;
   color: #fff;
   background: #fdbc48;
   outline: none;

@@ -20,8 +20,9 @@ body {
 }
 
 $blueColor : #29bde0;
-$fontSize17: 17px;
-$fontSize20: 20px;
+$fontSize17: .17rem;
+$fontSize20: .2rem;
+$fontSize15: .15rem;
 $whiteColor: #fff;
 
 %positionR {
@@ -71,7 +72,7 @@ nav {
     ul.big_list {
         width: 97.34%;
         margin: auto;
-        font-size: 15px;
+        font-size: $fontSize15;
     }
 }
 
@@ -155,7 +156,7 @@ nav {
     @extend %positionR;
     width: 72.66vw;
     height: 6.91vh;
-    font-size: 15px;
+    font-size: $fontSize15;
     color: $whiteColor;
     line-height: 6.91vh;
     text-align: center;
